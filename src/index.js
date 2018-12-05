@@ -24,6 +24,11 @@ async function load() {
       .readdirSync(inputFolder)
       .map (async zipFileName => {
 
+        if (! zipFileName.endsWith(".zip")) {
+          console.log("Skipping file", zipFileName);
+          return;
+        }
+
         let zipFilePath = path.join(inputFolder, zipFileName);
 
         // Read zip file

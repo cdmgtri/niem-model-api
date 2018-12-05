@@ -5,9 +5,10 @@
   "main": "src/index.js",
   "scripts": {
     "load": "node -p \"require('./src/index.js').load()\"",
+    "reload": "npm run reset && npm run load",
     "reset": "node -p \"require('./src/index.js').reset()\"",
     "load:schemas": "shx rm schemas/* && shx cp node_modules/niem-model-api-specification/schemas/deref/*.json schemas/",
-    "test": "cross-env TEST=true jest && test:json",
+    "test": "cross-env TEST=true jest && npm run test:json",
     "test:json": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"api/data/**/*.json\"",
     "test:examples": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"test/api/data/**/*.json\""
   },

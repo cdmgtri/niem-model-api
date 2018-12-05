@@ -1,0 +1,38 @@
+{
+  "name": "niem-model-api",
+  "version": "1.0.0",
+  "description": "This is a basic NIEM content repository that provides a mock REST API interface for data consumption.",
+  "main": "src/index.js",
+  "scripts": {
+    "load:input": "node -p \"require('./src/index.js').load()\"",
+    "reset": "node -p \"require('./src/index.js').reset()\"",
+    "zips": "node -p \"require('./src/index.js').moveZips()\"",
+    "load:schemas": "shx rm schemas/* && shx cp node_modules/niem-model-api-specification/schemas/deref/*.json schemas/",
+    "test": "cross-env TEST=true jest && test:json",
+    "test:json": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"api/data/**/*.json\"",
+    "test:ex-json": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"test/api/data/**/*.json\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "ajv-cli": "^3.0.0",
+    "fs-extra": "^7.0.1",
+    "globby": "^8.0.1",
+    "niem-model-api-specification": "github:cdmgtri/niem-model-api-specification",
+    "niem-package-utils-js": "github:cdmgtri/niem-package-utils-js",
+    "shx": "^0.3.2",
+    "trash": "^4.3.0"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "globals": {
+      "TEST": true
+    }
+  }
+}

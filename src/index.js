@@ -39,7 +39,8 @@ async function load() {
         process(model, zipFileName);
 
         // Unzip IEPD into the packages folder
-        Utils.unzipPackage(zipFilePath, pkgFolder);
+        let extractedFolder = path.join(pkgFolder, zipFileName.replace(".zip", ""));
+        Utils.unzipPackage(zipFilePath, extractedFolder);
 
         // Copy loaded
         fs.moveSync(zipFilePath, path.join(zipFolder, zipFileName));

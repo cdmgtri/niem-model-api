@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Medical_Mental_Health_Transfer_Summary-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Medical_Mental_Health_Transfer_Summary",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Medical_Mental_Health_Transfer_Summary.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Medical_Mental_Health_Transfer_Summary",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Medical_Mental_Health_Transfer_Summary.zip",
     "model": {
       "label": "Medical/Mental Health Transfer Summary",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Medical_Mental_Health_Transfer_Summary.json"

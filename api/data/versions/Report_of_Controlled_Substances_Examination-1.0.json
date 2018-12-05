@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Report_of_Controlled_Substances_Examination-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Report_of_Controlled_Substances_Examination",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Report_of_Controlled_Substances_Examination.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Report_of_Controlled_Substances_Examination",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Report_of_Controlled_Substances_Examination.zip",
     "model": {
       "label": "Report of Controlled Substances Examination",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Report_of_Controlled_Substances_Examination.json"

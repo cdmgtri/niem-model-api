@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/California_Department_of_Corrections_and_Rehabilitation_Detainer-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/California_Department_of_Corrections_and_Rehabilitation_Detainer",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/California_Department_of_Corrections_and_Rehabilitation_Detainer.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/California_Department_of_Corrections_and_Rehabilitation_Detainer",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/California_Department_of_Corrections_and_Rehabilitation_Detainer.zip",
     "model": {
       "label": "California Department of Corrections and Rehabilitation Detainer",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/California_Department_of_Corrections_and_Rehabilitation_Detainer.json"

@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Abstract_of_Judgment-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Abstract_of_Judgment",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Abstract_of_Judgment.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Abstract_of_Judgment",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Abstract_of_Judgment.zip",
     "model": {
       "label": "Abstract of Judgment",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Abstract_of_Judgment.json"

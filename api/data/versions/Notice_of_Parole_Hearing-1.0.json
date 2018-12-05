@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Notice_of_Parole_Hearing-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Notice_of_Parole_Hearing",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Notice_of_Parole_Hearing.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Notice_of_Parole_Hearing",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Notice_of_Parole_Hearing.zip",
     "model": {
       "label": "Notice of Parole Hearing",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Notice_of_Parole_Hearing.json"

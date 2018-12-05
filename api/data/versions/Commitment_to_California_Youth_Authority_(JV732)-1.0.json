@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Commitment_to_California_Youth_Authority_(JV732)-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Commitment_to_California_Youth_Authority_(JV732)",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Commitment_to_California_Youth_Authority_(JV732).zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Commitment_to_California_Youth_Authority_(JV732)",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Commitment_to_California_Youth_Authority_(JV732).zip",
     "model": {
       "label": "Commitment to California Youth Authority (JV732)",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Commitment_to_California_Youth_Authority_(JV732).json"

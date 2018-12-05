@@ -77,8 +77,8 @@ function loadVersionData(modelID, version, versionID) {
     data,
     links: {
       href: Resources.resourceURL("versions", versionID),
-      folder: Resources.packageFolder(versionID),
-      zip: Resources.zipFolder(versionID),
+      folder: Resources.packageFolder(modelID),
+      zip: Resources.zipFolder(modelID),
       model: {
         label: version.modelName,
         href: Resources.resourceURL("models", modelID)

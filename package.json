@@ -4,13 +4,12 @@
   "description": "This is a basic NIEM content repository that provides a mock REST API interface for data consumption.",
   "main": "src/index.js",
   "scripts": {
-    "load:input": "node -p \"require('./src/index.js').load()\"",
+    "load": "node -p \"require('./src/index.js').load()\"",
     "reset": "node -p \"require('./src/index.js').reset()\"",
-    "zips": "node -p \"require('./src/index.js').moveZips()\"",
     "load:schemas": "shx rm schemas/* && shx cp node_modules/niem-model-api-specification/schemas/deref/*.json schemas/",
     "test": "cross-env TEST=true jest && test:json",
     "test:json": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"api/data/**/*.json\"",
-    "test:ex-json": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"test/api/data/**/*.json\""
+    "test:examples": "ajv -s schemas/api-schema.json -m \"schemas/api-*-schema.json\" -d \"test/api/data/**/*.json\""
   },
   "keywords": [],
   "author": "",

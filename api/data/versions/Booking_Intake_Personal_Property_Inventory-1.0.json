@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Booking_Intake_Personal_Property_Inventory-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Booking_Intake_Personal_Property_Inventory",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Booking_Intake_Personal_Property_Inventory.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Booking_Intake_Personal_Property_Inventory",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Booking_Intake_Personal_Property_Inventory.zip",
     "model": {
       "label": "Booking Intake/Personal Property Inventory",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Booking_Intake_Personal_Property_Inventory.json"

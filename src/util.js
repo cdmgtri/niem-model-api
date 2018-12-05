@@ -15,6 +15,7 @@ class Utils {
    */
   static unzipPackage(zipFilePath, destFolder) {
     let zip = new Zip(zipFilePath);
+    fs.mkdirpSync(destFolder);
     zip.extractAllTo(destFolder);
   }
 

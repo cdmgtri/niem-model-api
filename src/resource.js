@@ -7,7 +7,9 @@ let { NIEMModel, NIEMVersion } = require("niem-model-api-specification");
 let { dataFolder } = require("./folders");
 
 /** Root API URL */
-const API_URL = "https://cdmgtri.github.io/niem-model-api/";
+const API_URL = "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/";
+
+const RENDERED_URL = "https://github.com/cdmgtri/niem-model-api/tree/dev/";
 
 /** @type {"models"|"versions"} */
 const resourceTypes = "";
@@ -72,7 +74,7 @@ class Resources {
    * @returns {string}
    */
   static resourceURL(resource, resourceID) {
-    return API_URL + "api/" + resource + "/" + resourceID + ".json";
+    return API_URL + "api/data/" + resource + "/" + resourceID + ".json";
   }
 
   /**
@@ -84,7 +86,7 @@ class Resources {
    * @returns {string}
    */
   static collectionURL(parentResource, parentResourceID, resource) {
-    return API_URL + `api/${parentResource}/${parentResourceID}/${resource}.json`;
+    return API_URL + `api/data/${parentResource}/${parentResourceID}/${resource}.json`;
   }
 
   /**
@@ -95,7 +97,7 @@ class Resources {
    * @returns {string}
    */
   static packageFolder(versionID) {
-    return API_URL + "api/packages/" + versionID;
+    return RENDERED_URL + "api/packages/" + versionID;
   }
 
   /**
@@ -106,7 +108,7 @@ class Resources {
    * @returns {string}
    */
   static zipFolder(versionID) {
-    return API_URL + "api/zips/" + versionID + ".zip";
+    return RENDERED_URL + "api/zips/" + versionID + ".zip";
   }
 
 }

@@ -30,8 +30,8 @@
   },
   "links": {
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/DNA_Compliance-1.0.json",
-    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/DNA_Compliance",
-    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/DNA_Compliance.zip",
+    "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/DNA_Compliance",
+    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/DNA_Compliance.zip",
     "model": {
       "label": "DNA Compliance",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/DNA_Compliance.json"

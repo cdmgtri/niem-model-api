@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Youth Authority Referral Document (YA 1.411)",
+    "uri": "http://doj.ca.gov/niem/YA1411/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/YA1411/1.0",
+      "Name": "Youth Authority Referral Document (YA 1.411)",
+      "Summary": "The Youth Authority Referral Document (YA 1.411) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "A Youth Authority Referral Document (YA 1.411) is a form sent from the Probation Department to the Youth Authority when a juvenile is referred from Probation to the Youth Authority.  The Youth Authority Referral Document (YA 1.411) contains personal identifying information about the juvenile, some medical information, commitment information, and family relations.  The Youth Authority Referral Document (YA 1.411) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "10/06/2008",
+      "LastRevisionDate": "09/02/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD YA1411 complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "If a juvenile is in custody of the probation department and awaiting adjudication and is a danger to self or others, and if the county facility is overcrowded and the county requests bed space for the juvenile, then the probation department provides this document to the youth authority.  The probation department will also provide this form to the youth authority in the case when the court sentences the juvenile to the youth authority.",
+      "TriggeringEvent": "Youth Authority Referral Document (YA 1.411) Complete",
+      "Conditions": "If a juvenile is referred from the probation department to the youth authority, the form is sent from probation to the youth authority.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "Provide the youth authority with information about the juvenile such as personal identifying information, medical and offense information, and family relations.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Youth_Authority_Referral_Document_(YA_1.411)-1.0.json",
+    "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Youth_Authority_Referral_Document_(YA_1.411)-1.0",
+    "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Youth_Authority_Referral_Document_(YA_1.411)-1.0.zip",
+    "model": {
+      "label": "Youth Authority Referral Document (YA 1.411)",
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Youth_Authority_Referral_Document_(YA_1.411).json"
+    }
+  }
+}

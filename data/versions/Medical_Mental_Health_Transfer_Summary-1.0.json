@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Medical/Mental Health Transfer Summary",
+    "uri": "http://doj.ca.gov/niem/MMHTransSum/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/MMHTransSum/1.0",
+      "Name": "Medical/Mental Health Transfer Summary",
+      "Summary": "The Medical/Mental Health Transfer Summary IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "A Medical/Mental Health Transfer Summary details medical data about a subject.  The data is sent from the jail to the California Department of Corrections and Rehabilitation reception center if a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation.  The Medical/Mental Health Transfer Summary contains information pertaining to the subject, medications, and other medical history information.  The Medical/Mental Health Transfer Summary is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "010/06/2008",
+      "LastRevisionDate": "02/05/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD MMHTransSum complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "When the jail transfers custody of a subject to the jurisdiction of the California Department of Corrections and Rehabilitation, the Medical/Mental Health Transfer Summary is sent to the reception center.",
+      "TriggeringEvent": "Medical/Mental Health Transfer Summary Complete",
+      "Conditions": "If a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To inform the California Department of Corrections and Rehabilitation of a transfer subject's medical/mental health summary.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Medical_Mental_Health_Transfer_Summary-1.0.json",
+    "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Medical_Mental_Health_Transfer_Summary-1.0",
+    "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Medical_Mental_Health_Transfer_Summary-1.0.zip",
+    "model": {
+      "label": "Medical/Mental Health Transfer Summary",
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Medical_Mental_Health_Transfer_Summary.json"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by VENDOR (STATE OF CALIFORNIA/DEPT. OF JUSTICE) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadojIndvEduProg="http://doj.ca.gov/niem/IndvEduProg/Document/1.0" xmlns:cadoj="http://doj.ca.gov/niem/IndvEduProg/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" targetNamespace="http://doj.ca.gov/niem/IndvEduProg/Document/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<xsd:annotation>
+		<xsd:documentation>This namespace defines the root element and type for the California In-state IEPD</xsd:documentation>
+	</xsd:annotation>
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://doj.ca.gov/niem/IndvEduProg/Extension/1.0" schemaLocation="..\IndvEduProg\extension-schema.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\IndvEduProg\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\IndvEduProg\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:complexType name="CaliforniaDOJIndvEduProgType">
+		<xsd:annotation>
+			<xsd:documentation>This is the document (root) type for the California DOJ Individual Education Program</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<!-- Exchange Elements Generated Start Here -->
+					<xsd:element ref="cadoj:Guardian"/>
+					<xsd:element ref="cadoj:Mother"/>
+					<xsd:element ref="cadoj:Father"/>
+					<xsd:element ref="cadoj:StepParent"/>
+					<xsd:element ref="cadoj:Parent"/>
+					<xsd:element ref="cadoj:CaseCarrier"/>
+					<xsd:element ref="cadoj:Juvenile"/>
+					<xsd:element ref="cadoj:Agency"/>
+					<xsd:element ref="cadoj:School"/>
+					<xsd:element ref="cadoj:IEPTeam"/>
+					<!-- Exchange Elements Generated End Here -->
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--Root Element for the Individualized Education Program Exchange -->
+	<xsd:element name="CaliforniaDOJIndvEduProg" type="cadojIndvEduProg:CaliforniaDOJIndvEduProgType"/>
+</xsd:schema>

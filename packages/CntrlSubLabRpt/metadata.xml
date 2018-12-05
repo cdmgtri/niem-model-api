@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/CntrlSubLabRpt/1.0</URI>
+    <Name>Report of Controlled Substances Examination</Name>
+    <Summary>The Report of Controlled Substances Examination IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>A Report of Controlled Substances Examination is sent from the Sheriff to the Prosecutor if the lab analyzes evidence for controlled substance related to a pending case.  The report details the lab results related to controlled substances.  The Prosecutor in turn informs the Public Defender of the lab results. .  The Report of Controlled Substances Examination contains lab information, description of the evidence, examination results, and a signature block.  The Report of Controlled Substances Examination is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>08/29/2008</CreationDate>
+    <LastRevisionDate>02/03/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD CntrlSubLabRpt complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>If the lab analyzes evidence for controlled substances, the lab results are sent from the Sheriff to the Prosecutor and from the Prosecutor to the Public Defender.</Process>
+    <TriggeringEvent>Report of Controlled Substances Examination Complete</TriggeringEvent>
+    <Conditions>If the lab analyzes evidence for controlled substances.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To inform the Prosecutor and Public Defender of lab results related to evidence in a pending case.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

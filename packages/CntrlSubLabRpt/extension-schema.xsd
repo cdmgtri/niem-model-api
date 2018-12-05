@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/CntrlSubLabRpt/Extension/1.0" xmlns:cadojCntrlSubLabRptcodes="http://doj.ca.gov/niem/CntrlSubLabRpt/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/CntrlSubLabRpt/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\CntrlSubLabRpt\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\CntrlSubLabRpt\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\CntrlSubLabRpt\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\CntrlSubLabRpt\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/CntrlSubLabRpt/Codes/1.0" schemaLocation="..\CntrlSubLabRpt\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="CntrlSubLabRptType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for California DOJ IEPD Report of Controlled Substances Examination.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonType">
+		<xsd:annotation>
+			<xsd:documentation>A data type extension to NIEM Person Type.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:PersonType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureLocation" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions Start Here -->
+	<xsd:complexType name="BloodCollectorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type BloodCollector </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:BloodCollectorID"/>
+					<xsd:element ref="cadoj:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="BloodSampleType">
+		<xsd:annotation>
+			<xsd:documentation>A data type BloodSample </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:BloodSampleCollectionLocation"/>
+					<xsd:element ref="cadoj:BloodSampleCollectionDate"/>
+					<xsd:element ref="cadoj:BloodSampleCollectionTime"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EvidenceHandlerType">
+		<xsd:annotation>
+			<xsd:documentation>A data type EvidenceHandler </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EvidenceRecieverType">
+		<xsd:annotation>
+			<xsd:documentation>A data type EvidenceReciever </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EvidenceSenderType">
+		<xsd:annotation>
+			<xsd:documentation>A data type EvidenceSender </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="InvestigatingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Investigating Agency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LabAnalystType">
+		<xsd:annotation>
+			<xsd:documentation>A data type LabAnalyst </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+					<xsd:element ref="cadoj:SignatureImage"/>
+					<xsd:element ref="cadoj:JobTitle"/>
+					<xsd:element ref="cadoj:SignatureDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LabItemType">
+		<xsd:annotation>
+			<xsd:documentation>A data type LabItem </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:SpecimenID"/>
+					<xsd:element ref="cadoj:SpecimenDescription"/>
+					<xsd:element ref="cadoj:LabItemNumberOfPackages"/>
+					<xsd:element ref="cadoj:LabItemTypeOfPackages"/>
+					<xsd:element ref="cadoj:LabItemSource"/>
+					<xsd:element ref="cadoj:LabItemWeight"/>
+					<xsd:element ref="cadoj:LabItemWeightIndicator"/>
+					<xsd:element ref="cadoj:BloodSample"/>
+					<xsd:element ref="cadoj:LabTestResults"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LabSupervisorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type LabSupervisor </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+					<xsd:element ref="cadoj:JobTitle"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LabTestType">
+		<xsd:annotation>
+			<xsd:documentation>A data type LabTest </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ProcedureDescription"/>
+					<xsd:element ref="cadoj:QualitativeAnalysisFlag"/>
+					<xsd:element ref="cadoj:LabCaseType"/>
+					<xsd:element ref="cadoj:RequestTestDateTime"/>
+					<xsd:element ref="cadoj:SampleRecievedDateTime"/>
+					<xsd:element ref="cadoj:LabTestDate"/>
+					<xsd:element ref="cadoj:LabItem"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LabTestResultsType">
+		<xsd:annotation>
+			<xsd:documentation>A data type LabTestResults </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:LabTestResultsTypesOfSubstances"/>
+					<xsd:element ref="cadoj:ScheduleOrNonControlledFlag"/>
+					<xsd:element ref="cadoj:LabTestResultsItemComment"/>
+					<xsd:element ref="cadoj:LabTestResultsGeneralComment"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EnforcementOfficalType">
+		<xsd:annotation>
+			<xsd:documentation>An Extension to NIEM Enforcment Official Type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:EnforcementOfficialType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:Signature"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Subject </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions End Here -->
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="CntrlSubLabRpt" type="cadoj:CntrlSubLabRptType">
+		<xsd:annotation>
+			<xsd:documentation>Information for CDC Additional Commitment Form</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes Start Here -->
+	<xsd:element name="BloodCollector" type="cadoj:BloodCollectorType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for BloodCollector</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="BloodCollectorID" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The identification number of the person who collected the sample or witnessed the collection.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="BloodSample" type="cadoj:BloodSampleType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for BloodSample</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="BloodSampleCollectionLocation" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The place where the blood sample was taken</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="BloodSampleCollectionDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The month, day and year that the blood sample was taken.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="BloodSampleCollectionTime" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The time (24 hour clock) when the blood sample was taken.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EvidenceHandler" type="cadoj:EvidenceHandlerType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for EvidenceHandler</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The identification number of the person who turned over the evidence to the laboratory for testing.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EvidenceReciever" type="cadoj:EvidenceRecieverType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for EvidenceReciever</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EvidenceSender" type="cadoj:EvidenceSenderType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for EvidenceSender</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabAnalyst" type="cadoj:LabAnalystType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for LabAnalyst</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureImage" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Laboratory Analyst's digital signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JobTitle" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The job title of the person who performed testing of the blood, urine or other substance.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabItem" type="cadoj:LabItemType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for LabItem</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecimenID" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The number assigned to the blood alcohol specimen by the laboratory.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecimenDescription" type="cadojCntrlSubLabRptcodes:ControledSubstanceItemDescriptionType">
+		<xsd:annotation>
+			<xsd:documentation>Further description of the item received by the laboratory for testing.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabItemNumberOfPackages" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The number of packages of the substance for a specific laboratory item number. </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabItemTypeOfPackages" type="cadojCntrlSubLabRptcodes:ControledSubstanceEvidencePackagingType">
+		<xsd:annotation>
+			<xsd:documentation>The packaging of a specific laboratory testing item. (plastic bags, bindles, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabItemSource" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The location where the substance submitted for testing was found.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabItemWeight" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The weight in grams of the sample submitted for testing.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabItemWeightIndicator" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Whether the weight of the item submitted for testing was estimated as opposed to weighed.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabSupervisor" type="cadoj:LabSupervisorType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for LabSupervisor</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTest" type="cadoj:LabTestType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for LabTest</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProcedureDescription" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of the procedure used for developing test results.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="QualitativeAnalysisFlag" type="cadojCntrlSubLabRptcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Yes or no indicator regarding qualitative analysis.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabCaseType" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The case type assigned by the laboratory</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RequestTestDateTime" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date and time a request for laboratory testing was submitted.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SampleRecievedDateTime" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date and time a sample was received at the lab for testing.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date the lab test was performed</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestResults" type="cadoj:LabTestResultsType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for LabTestResults</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestResultsTypesOfSubstances" type="cadojCntrlSubLabRptcodes:ControledSubstanceExamResultsType">
+		<xsd:annotation>
+			<xsd:documentation>The types of substances found in the test sample, both controlled and non-controlled.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ScheduleOrNonControlledFlag" type="cadojCntrlSubLabRptcodes:ControledSubstanceExamResultsScheduleType">
+		<xsd:annotation>
+			<xsd:documentation>The number of the schedule for a controlled substance or indicator for non-controlled substance</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestResultsItemComment" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Further comments on the test results for controlled substances for a specific sample.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabTestResultsGeneralComment" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Further comments on the test results for controlled substances .</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureLocation" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>County, City and State where document signed under oath by law enforcement officer.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Subject" type="cadoj:SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Subject</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="InvestigatingAgency" type="cadoj:InvestigatingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Name of the agency that conducted an investigation.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes End Here -->
+</xsd:schema>

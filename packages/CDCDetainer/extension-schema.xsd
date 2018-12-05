@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/CDCDetainer/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:scr="http://niem.gov/niem/domains/screening/2.0" targetNamespace="http://doj.ca.gov/niem/CDCDetainer/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\CDCDetainer\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\CDCDetainer\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\CDCDetainer\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\CDCDetainer\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/screening/2.0" schemaLocation="..\CDCDetainer\niem\domains\screening\2.0\screening.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="CDCDetainerType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for CDC Detainer.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ContactInformationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Warrant Agency Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ContactInformationType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Information on Personal Identification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonStateIdentification"/>
+					<xsd:element ref="cadoj:CDCIdentifierNumber"/>
+					<xsd:element ref="cadoj:AliasName"/>
+					<xsd:element ref="scr:PersonPhysicalMarkingID"/>
+					<xsd:element ref="j:PersonFBIIdentification"/>
+					<xsd:element ref="nc:PersonOtherIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Subjects Information this extends the NIEM construct type for Subject</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:SubjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+					<xsd:element ref="nc:DriverLicenseIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="WarrantAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Warrant Agency Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+					<xsd:element ref="nc:OrganizationDescriptionText"/>
+					<xsd:element ref="nc:ContactInformation"/>
+					<xsd:element ref="cadoj:WarrantReasonCode"/>
+					<xsd:element ref="cadoj:WarrantReleaseConditionCode"/>
+					<xsd:element ref="cadoj:WarrantReleaseConditionDescription"/>
+					<xsd:element ref="cadoj:WarrantTypeCode"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="AliasName" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>An Identification Name the is considered an Alias for the Person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDCDetainer" type="cadoj:CDCDetainerType">
+		<xsd:annotation>
+			<xsd:documentation>Information for CDC Additional Commitment Form</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDCIdentifierNumber" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The CDC number of the subject of the warrant.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonIdentification" type="cadoj:PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification Numbers Assigned to a Person by and Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WarrantAgency" type="cadoj:WarrantAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Information for the Warrant Agency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WarrantReasonCode" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The reason a particular warrant was issued (e.g. fail to appear, indictment).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WarrantReleaseConditionCode" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Code describing a specific release condition associated with the warrant (e.g. do not cite and release).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WarrantReleaseConditionDescription" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Free-form description of a release condition associated with the warrant (e.g. do not cite, do not release on own recognizance).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WarrantTypeCode" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Code describes the type of warrant (e.g. Arrest, Bench, Return to Custody).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

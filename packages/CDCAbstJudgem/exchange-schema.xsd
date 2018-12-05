@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by VENDOR (STATE OF CALIFORNIA/DEPT. OF JUSTICE) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadojCDCAbstJudgem="http://doj.ca.gov/niem/CDCAbstJudgem/Document/1.0" xmlns:cadoj="http://doj.ca.gov/niem/CDCAbstJudgem/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/CDCAbstJudgem/Document/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<xsd:annotation>
+		<xsd:documentation>This namespace defines the root element and type for the California In-state IEPD</xsd:documentation>
+	</xsd:annotation>
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://doj.ca.gov/niem/CDCAbstJudgem/Extension/1.0" schemaLocation="..\CDCAbstJudgem\extension-schema.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\CDCAbstJudgem\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\CDCAbstJudgem\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\CDCAbstJudgem\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:complexType name="CaliforniaDOJCDCAbstJudgemType">
+		<xsd:annotation>
+			<xsd:documentation>This is the document (root) type for the California DOJ Abstract Judgement</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<!-- Exchange Elements Generated Start Here -->
+					<xsd:element ref="cadoj:CDCAbstJudgem"/>
+					<xsd:element ref="cadoj:Prosecutor"/>
+					<xsd:element ref="cadoj:ProbationOfficer"/>
+					<xsd:element ref="cadoj:CourtReporter"/>
+					<xsd:element ref="cadoj:DefenseAttorney"/>
+					<xsd:element ref="j:Victim"/>
+					<xsd:element ref="j:Judge"/>
+					<xsd:element ref="cadoj:DNACertifyingPerson"/>
+					<xsd:element ref="cadoj:DeputyClerk"/>
+					<xsd:element ref="cadoj:FilingClerk"/>
+					<xsd:element ref="j:Subject"/>
+					<xsd:element ref="cadoj:ConfinementAgency"/>
+					<xsd:element ref="cadoj:DNACertifyingAgency"/>
+					<xsd:element ref="j:Court"/>
+					<xsd:element ref="j:Sentence"/>
+					<xsd:element ref="j:SentenceModification"/>
+					<xsd:element ref="j:Booking"/>
+					<xsd:element ref="nc:Case"/>
+					<xsd:element ref="j:Charge"/>
+					<xsd:element ref="j:Conviction"/>
+					<xsd:element ref="j:CourtAppearance"/>
+					<xsd:element ref="cadoj:DNAOrder"/>
+					<xsd:element ref="cadoj:Probation"/>
+					<xsd:element ref="cadoj:Restitution"/>
+					<xsd:element ref="cadoj:Remand"/>
+					<!-- Exchange Elements Generated End Here -->
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--Root Element for the Abstract of Judgment Exchange -->
+	<xsd:element name="CaliforniaDOJCDCAbstJudgem" type="cadojCDCAbstJudgem:CaliforniaDOJCDCAbstJudgemType"/>
+</xsd:schema>

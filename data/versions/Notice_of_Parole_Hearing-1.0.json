@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Notice of Parole Hearing",
+    "uri": "http://doj.ca.gov/niem/NoticeParoleHrg/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/NoticeParoleHrg/1.0",
+      "Name": "Notice of Parole Hearing",
+      "Summary": "The Notice of Parole Hearing IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "A Notice of Parole Hearing is a form sent from the California Department of Corrections and Rehabilitation to the Prosecutor when a subject is serving a life term and is eligible for parole pursuant to Penal Code 3042.  This communication informs the Prosecutor of the subject's parole eligibility. The Notice of Parole Hearing contains information regarding the type of hearing, parole subject information, and narrative information regarding the process.  The Notice of Parole Hearing is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "08/01/2008",
+      "LastRevisionDate": "01/30/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD NoticeParoleHrg complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "If a subject is serving a life term and if the subject is eligible for parole, pursuant to Penal Code 3042, the California Department of Corrections and Rehabilitation informs the Prosecutor of the subject?s parole eligibility.",
+      "TriggeringEvent": "Notice of Parole Hearing Complete",
+      "Conditions": "If a subject is serving a life term and is eligible for parole.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To inform the Prosecutor of a subject's parole eligibility.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Notice_of_Parole_Hearing-1.0.json",
+    "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Notice_of_Parole_Hearing-1.0",
+    "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Notice_of_Parole_Hearing-1.0.zip",
+    "model": {
+      "label": "Notice of Parole Hearing",
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Notice_of_Parole_Hearing.json"
+    }
+  }
+}

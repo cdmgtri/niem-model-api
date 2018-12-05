@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Abstract of Judgment",
+    "uri": "http://doj.ca.gov/niem/CDCAbstJudgem/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/CDCAbstJudgem/1.0",
+      "Name": "Abstract of Judgment",
+      "Summary": "The Abstract of Judgment IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "An Abstract of Judgment is sent from the Court to the jail and California Department of Corrections and Rehabilitation if the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.  The Abstract of Judgment contains court information, defendant information, charge information, and a signature block.  The Abstract of Judgment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "09/08/2008",
+      "LastRevisionDate": "02/05/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD CDCAbstJudgem complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "If the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport, the Court reports the prison sentence to the jail and to the California Department of Corrections and Rehabilitation.",
+      "TriggeringEvent": "Abstract of Judgment Complete",
+      "Conditions": "If the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To inform the jail and California Department of Corrections and Rehabilitation when the Court has charged a subject to a prison sentence.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Abstract_of_Judgment-1.0.json",
+    "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Abstract_of_Judgment-1.0",
+    "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Abstract_of_Judgment-1.0.zip",
+    "model": {
+      "label": "Abstract of Judgment",
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Abstract_of_Judgment.json"
+    }
+  }
+}

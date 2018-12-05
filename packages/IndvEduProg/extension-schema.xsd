@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by lee (DOJ) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/IndvEduProg/Extension/1.0" xmlns:cadojIndvEduProgcodes="http://doj.ca.gov/niem/IndvEduProg/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" targetNamespace="http://doj.ca.gov/niem/IndvEduProg/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\IndvEduProg\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\IndvEduProg\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\IndvEduProg\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/IndvEduProg/Codes/1.0" schemaLocation="..\IndvEduProg\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<!-- Generated IEPD Type Extensions Start Here -->
+	<xsd:complexType name="AgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Agency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:AgencyServiceCode"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CaseCarrierType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CaseCarrier </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DisabilityType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Disability </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PrimaryDisabilityCode"/>
+					<xsd:element ref="cadoj:DisabilitySeverityCode"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EducationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Education </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:LastGrade"/>
+					<xsd:element ref="cadoj:IEPFlag"/>
+					<xsd:element ref="cadoj:CurrentGrade"/>
+					<xsd:element ref="cadoj:SpecialEducationPlacementDate"/>
+					<xsd:element ref="cadoj:EducationPlanCode"/>
+					<xsd:element ref="cadoj:SpecialEducationPercentage"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="FatherType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Father </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="cadoj:WorkTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="GuardianType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Guardian </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="cadoj:WorkTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="IEPMeetingType">
+		<xsd:annotation>
+			<xsd:documentation>A data type IEPMeeting </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:IEPDate"/>
+					<xsd:element ref="cadoj:NextIEPDate"/>
+					<xsd:element ref="cadoj:MostRecentTriennialIEP"/>
+					<xsd:element ref="cadoj:NextTriennialIEP"/>
+					<xsd:element ref="cadoj:IEPMeetingPurposeCode"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="IEPTeamType">
+		<xsd:annotation>
+			<xsd:documentation>A data type IEPTeam </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:IEPJustificationText"/>
+					<xsd:element ref="cadoj:ServiceRecommended"/>
+					<xsd:element ref="cadoj:IEPMeeting"/>
+					<xsd:element ref="cadoj:Plan"/>
+					<xsd:element ref="cadoj:Program"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="JuvenileType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Juvenile </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonFullName"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+					<xsd:element ref="nc:PersonSSNIdentification"/>
+					<xsd:element ref="nc:PersonSex"/>
+					<xsd:element ref="nc:PersonEthnicity"/>
+					<xsd:element ref="cadoj:Residency"/>
+					<xsd:element ref="cadoj:Disability"/>
+					<xsd:element ref="cadoj:Education"/>
+					<xsd:element ref="cadoj:Language"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="LanguageType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Language </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:LanguageAtHome"/>
+					<xsd:element ref="cadoj:LanguageOutsideOfHome"/>
+					<xsd:element ref="cadoj:EnglishProficiency"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MotherType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Mother </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="cadoj:WorkTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ParentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Parent </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PlanType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Plan </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PlanServices"/>
+					<xsd:element ref="cadoj:PlanServing"/>
+					<xsd:element ref="cadoj:PlanStartDate"/>
+					<xsd:element ref="cadoj:PlanEndDate"/>
+					<xsd:element ref="cadoj:PlanFrequency"/>
+					<xsd:element ref="cadoj:PlanTime"/>
+					<xsd:element ref="cadoj:PlanPeriod"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProgramType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Program </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PhysicalEducationCode"/>
+					<xsd:element ref="cadoj:MigrantEducationFlag"/>
+					<xsd:element ref="cadoj:WorkAbilityFlag"/>
+					<xsd:element ref="cadoj:SpecialEducationTransportationFlag"/>
+					<xsd:element ref="cadoj:ExtendedSchoolYearFlag"/>
+					<xsd:element ref="cadoj:TransitionLanguageFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SchoolType">
+		<xsd:annotation>
+			<xsd:documentation>A data type School </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:SchoolDistrict"/>
+					<xsd:element ref="cadoj:SchoolCurrentlyAttended"/>
+					<xsd:element ref="cadoj:TypeOfSchool"/>
+					<xsd:element ref="cadoj:PriorSchool"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ServiceRecommendedType">
+		<xsd:annotation>
+			<xsd:documentation>A data type ServiceRecommended </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:GeneralEducationConsideredFlag"/>
+					<xsd:element ref="cadoj:DesignatedEducationConsideredFlag"/>
+					<xsd:element ref="cadoj:ResourceSpecialistConsideredFlag"/>
+					<xsd:element ref="cadoj:SpecialDayClassConsideredFlag"/>
+					<xsd:element ref="cadoj:NonPublicSchoolConsideredFlag"/>
+					<xsd:element ref="cadoj:OtherConsideredText"/>
+					<xsd:element ref="cadoj:GeneralEducationRecommendedFlag"/>
+					<xsd:element ref="cadoj:DesignatedEducationRecommendedFlag"/>
+					<xsd:element ref="cadoj:ResourceSpecialistRecommendedFlag"/>
+					<xsd:element ref="cadoj:SpecialDayClassRecommendedFlag"/>
+					<xsd:element ref="cadoj:NonPublicSchoolRecommendedFlag"/>
+					<xsd:element ref="cadoj:OtherRecommendedText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="StateAssessmentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type StateAssessment </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:StateAssessmentFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="StepParentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type StepParent </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="cadoj:WorkTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ResidencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Residency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ResidencyCode"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions End Here -->
+	<!-- Global Element Deffinitions -->
+	<!-- Generated IEPD Attributes Start Here -->
+	<xsd:element name="Agency" type="cadoj:AgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Agency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AgencyServiceCode" type="cadojIndvEduProgcodes:AgencyServiceType">
+		<xsd:annotation>
+			<xsd:documentation>Choices are CA Child Services, Dept of Rehabilitation, County Mental Health, Dept. of Social Services, Regional Center, Protective Services, or other</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CaseCarrier" type="cadoj:CaseCarrierType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CaseCarrier</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Disability" type="cadoj:DisabilityType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Disability</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PrimaryDisabilityCode" type="cadojIndvEduProgcodes:PrimaryDisabilityType">
+		<xsd:annotation>
+			<xsd:documentation>Description of the juvenile's main disability.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DisabilitySeverityCode" type="cadojIndvEduProgcodes:DisabilitySeverityType">
+		<xsd:annotation>
+			<xsd:documentation>Indication as to whether the youth's primary disability is mild, moderate or severe.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Education" type="cadoj:EducationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Education</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastGrade" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The last grade in school attended by the juvenile</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indicator as to whether the youth has ever been placed in a special education program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CurrentGrade" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The grade in school currently attended by the juvenile</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecialEducationPlacementDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the juvenile was first placed in special education classes.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EducationPlanCode" type="cadojIndvEduProgcodes:EducationPlanType">
+		<xsd:annotation>
+			<xsd:documentation>Codes indicating IEP, IFSP, ISP type educational plans</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecialEducationPercentage" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The percentage of the youth's school day devoted to special education services.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Father" type="cadoj:FatherType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Father</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WorkTelephoneNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Complex element contains all of the components associated with the work telephone number of the youth's father</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Guardian" type="cadoj:GuardianType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Guardian</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPMeeting" type="cadoj:IEPMeetingType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for IEPMeeting</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the Individualized Education Plan was conducted.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NextIEPDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the next Individualized Education Plan should be conducted.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MostRecentTriennialIEP" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date of the most recent triennial IEP meeting, which reviews test results and determines special education requirements.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NextTriennialIEP" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date by which the next triennial IEP meeting must be conducted.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPMeetingPurposeCode" type="cadojIndvEduProgcodes:IEPMeetingPurposeType">
+		<xsd:annotation>
+			<xsd:documentation>The purpose of the evaluation meeting with a juvenile, such as initial IEP, annual review, triennial, transition, exit, other.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPTeam" type="cadoj:IEPTeamType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for IEPTeam</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPJustificationText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of the juvenile's eligibility for special education.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Juvenile" type="cadoj:JuvenileType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Juvenile</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResidencyCode" type="cadojIndvEduProgcodes:ResidencyType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the place where the youth lives (with parent/guardian, foster home, licensed children's' institution or other placement).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Language" type="cadoj:LanguageType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Language</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LanguageAtHome" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The language spoken in the youth's home.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LanguageOutsideOfHome" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The language the juvenile speaks outside the home.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EnglishProficiency" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The youth's proficiency in speaking the English language (full proficiency, limited, none).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Mother" type="cadoj:MotherType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Mother</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Parent" type="cadoj:ParentType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Parent</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Plan" type="cadoj:PlanType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Plan</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanServices" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the special education placement(s) the youth will be enrolled in.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanServing" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The type of school the youth will attend for special education programs.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanStartDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the IEP will be implemented.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanEndDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the IEP expires.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanFrequency" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A number indicating how many times the service is provided in the time period specified by the data element Juvenile Special Education Time Period.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanTime" type="xsd:time">
+		<xsd:annotation>
+			<xsd:documentation>The number of minutes the special education service is provided to the youth per time period specified in  the data element Juvenile Special Education Time Period.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanPeriod" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Whether the special education service provided to the youth is scheduled daily, weekly, monthly or yearly.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Program" type="cadoj:ProgramType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Program</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PhysicalEducationCode" type="cadojIndvEduProgcodes:PhysicalEducationType">
+		<xsd:annotation>
+			<xsd:documentation>The type of physical education class the youth is recommended for.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MigrantEducationFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indication as to whether the youth meets the criteria for migrant education program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WorkAbilityFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indication as to whether the youth meets the criteria for a work ability education program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecialEducationTransportationFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indication as to whether the youth meets the criteria for a special education transportation.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ExtendedSchoolYearFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indication as to whether the youth meets the criteria for extended school year program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TransitionLanguageFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indication as to whether the youth meets the criteria for transition language program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="School" type="cadoj:SchoolType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for School</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SchoolDistrict" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The school district of the youth's residence.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SchoolCurrentlyAttended" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the school the youth currently attends.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TypeOfSchool" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The type of school the youth attends currently (residential, public, non-public, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PriorSchool" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the school the youth attended prior to the current school.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ServiceRecommended" type="cadoj:ServiceRecommendedType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for ServiceRecommended</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="GeneralEducationConsideredFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether general education was the primary IEP service considered for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DesignatedEducationConsideredFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Designated Instruction was the primary  IEP service considered for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Residency" type="cadoj:ResidencyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Residency Information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResourceSpecialistConsideredFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Resource Specialist was the primary  IEP service considered for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecialDayClassConsideredFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Special Day Class was the primary  IEP service considered for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NonPublicSchoolConsideredFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Non-Public School was the primary  IEP service considered for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherConsideredText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A description of the other primary  IEP service considered for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="GeneralEducationRecommendedFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether general education was the primary IEP service recommended for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DesignatedEducationRecommendedFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Designated Instruction was the primary  IEP service recommended for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResourceSpecialistRecommendedFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Resource Specialist was the primary  IEP service recommended for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SpecialDayClassRecommendedFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Special Day Class was the primary  IEP service recommended for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NonPublicSchoolRecommendedFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no indicator as to whether Non-Public School was the primary  IEP service recommended for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherRecommendedText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A description of the other primary  IEP service recommended for the youth.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StateAssessment" type="cadoj:StateAssessmentType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for StateAssessment</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StateAssessmentFlag" type="cadojIndvEduProgcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indication as to whether the youth will participate in state standardization tests.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StepParent" type="cadoj:StepParentType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for StepParent</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes End Here -->
+</xsd:schema>

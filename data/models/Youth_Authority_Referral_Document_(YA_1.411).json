@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Youth Authority Referral Document (YA 1.411)",
+    "summary": "The Youth Authority Referral Document (YA 1.411) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Youth Authority Referral Document (YA 1.411) is a form sent from the Probation Department to the Youth Authority when a juvenile is referred from Probation to the Youth Authority.  The Youth Authority Referral Document (YA 1.411) contains personal identifying information about the juvenile, some medical information, commitment information, and family relations.  The Youth Authority Referral Document (YA 1.411) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Youth_Authority_Referral_Document_(YA_1.411)",
+    "href": "https://cdmgtri.github.io/niem-model-api/api/models/Youth_Authority_Referral_Document_(YA_1.411).json",
+    "versions": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Youth_Authority_Referral_Document_(YA_1.411)/versions.json",
+      "count": 1
+    }
+  }
+}

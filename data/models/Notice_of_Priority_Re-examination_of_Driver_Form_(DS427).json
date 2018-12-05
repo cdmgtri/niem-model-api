@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Notice of Priority Re-examination of Driver Form (DS427)",
+    "summary": "The Notice of Priority Re-examination of Driver Form (DS427) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Notice of Priority Re-examination of Driver Form (DS427) is sent from a Law Enforcement Officer to the California Department of Motor Vehicles when an Officer believes that a subject's driving privilege should be investigated.  The Officer indicates on the Notice of Priority Re-examination of Driver Form (DS427) what actions were displayed by the subject to lead the Officer to believe a re-examination of driving privilege is needed.  The Notice of Priority Re-examination of Driver Form (DS427) contains information relevant to the driver, location of occurrence, summary of actions and possible traffic law violations, and a signature block.  The Notice of Priority Re-examination of Driver Form (DS427) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)",
+    "href": "https://cdmgtri.github.io/niem-model-api/api/models/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427).json",
+    "versions": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)/versions.json",
+      "count": 1
+    }
+  }
+}

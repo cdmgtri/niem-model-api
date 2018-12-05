@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by VENDOR (STATE OF CALIFORNIA/DEPT. OF JUSTICE) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadojJV732="http://doj.ca.gov/niem/JV732/Document/1.0" xmlns:cadoj="http://doj.ca.gov/niem/JV732/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/JV732/Document/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<xsd:annotation>
+		<xsd:documentation>This namespace defines the root element and type for the California In-state IEPD</xsd:documentation>
+	</xsd:annotation>
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://doj.ca.gov/niem/JV732/Extension/1.0" schemaLocation="..\JV732\extension-schema.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\JV732\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\JV732\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\JV732\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:complexType name="CaliforniaDOJJV732Type">
+		<xsd:annotation>
+			<xsd:documentation>This is the document (root) type for the California DOJ Commitment to California Youth Authority</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<!-- Exchange Elements Generated Start Here -->
+					<xsd:element ref="nc:Case"/>
+					<xsd:element ref="j:Charge"/>
+					<xsd:element ref="cadoj:CommitmentFinding"/>
+					<xsd:element ref="j:Court"/>
+					<xsd:element ref="cadoj:CourtAppearance"/>
+					<xsd:element ref="cadoj:CourtRecommendation"/>
+					<xsd:element ref="cadoj:DefenseAttorney"/>
+					<xsd:element ref="cadoj:Disposition"/>
+					<xsd:element ref="cadoj:Guardian"/>
+					<xsd:element ref="cadoj:Judge"/>
+					<xsd:element ref="cadoj:Juvenile"/>
+					<xsd:element ref="cadoj:Medical"/>
+					<xsd:element ref="cadoj:PersonPresent"/>
+					<xsd:element ref="cadoj:JV732"/>
+					<!-- Exchange Elements Generated End Here -->
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!--Root Element for the JV732 Exchange -->
+	<xsd:element name="CaliforniaDOJJV732" type="cadojJV732:CaliforniaDOJJV732Type"/>
+</xsd:schema>

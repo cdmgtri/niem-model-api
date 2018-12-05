@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Commitment to California Youth Authority (JV732)",
+    "summary": "The Commitment to California Youth Authority (JV732) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Commitment to California Youth Authority (JV732) is a form sent from the court to the California Youth Authority when the court sentences a subject to be committed to the California Youth Authority.  The Commitment to California Youth Authority contains court information, court order and findings, signature block.  The Commitment to California Youth Authority (JV732) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Commitment_to_California_Youth_Authority_(JV732)",
+    "href": "https://cdmgtri.github.io/niem-model-api/api/models/Commitment_to_California_Youth_Authority_(JV732).json",
+    "versions": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Commitment_to_California_Youth_Authority_(JV732)/versions.json",
+      "count": 1
+    }
+  }
+}

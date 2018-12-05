@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Commitment to California Youth Authority (JV732)",
+    "uri": "http://doj.ca.gov/niem/JV732/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/JV732/1.0",
+      "Name": "Commitment to California Youth Authority (JV732)",
+      "Summary": "The Commitment to California Youth Authority (JV732) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "A Commitment to California Youth Authority (JV732) is a form sent from the court to the California Youth Authority when the court sentences a subject to be committed to the California Youth Authority.  The Commitment to California Youth Authority contains court information, court order and findings, signature block.  The Commitment to California Youth Authority (JV732) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "10/06/2008",
+      "LastRevisionDate": "09/02/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD JV732 complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "The court sends the Commitment to the California Youth Authority (JV732) form when the court has sentenced a subject to be committed to the California Youth Authority.",
+      "TriggeringEvent": "Commitment to California Youth Authority (JV732) Complete",
+      "Conditions": "The court has sentenced a subject to be committed to the California Youth Authority.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To inform the California Youth Authority of the orders and findings of the court regarding a subject sentenced to the Youth Authority",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Commitment_to_California_Youth_Authority_(JV732)-1.0.json",
+    "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Commitment_to_California_Youth_Authority_(JV732)-1.0",
+    "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Commitment_to_California_Youth_Authority_(JV732)-1.0.zip",
+    "model": {
+      "label": "Commitment to California Youth Authority (JV732)",
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Commitment_to_California_Youth_Authority_(JV732).json"
+    }
+  }
+}

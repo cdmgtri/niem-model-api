@@ -1,0 +1,743 @@
+[
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Abstract/Document Error (DL157)",
+      "uri": "http://doj.ca.gov/niem/DL157/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/DL157/1.0",
+        "Name": "Abstract/Document Error (DL157)",
+        "Summary": "The Abstract/Document Error (DL157) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "An Abstract/Document Error (DL157) is a form sent from the California Superior Court to the California Department of Motor Vehicles when the court has placed an abstract on an incorrect driving record.  The Department of Motor Vehicles will update their records with the correct information.  The Abstract/Document Error (DL157) contains citation information, driving record information for removal of citation information, signature block.  The Abstract/Document Error (DL157) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "07/14/2008",
+        "LastRevisionDate": "01/21/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD DL157 complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The California Superior Court informs the California Department of Motor Vehicles if a reportable charge is placed on an incorrect driving record.",
+        "TriggeringEvent": "Abstract/Document Error (DL157) Complete",
+        "Conditions": "If a reportable charge is placed on an incorrect driving record then the Abstract/Document Error (DL157) form is used to inform the California Department of Motor Vehicles.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "Provides a way for the California Superior Court to communicate with the California Department of Motor Vehicles when a reportable charge is placed on an incorrect driving record.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Abstract_Document_Error_(DL157)-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Abstract_Document_Error_(DL157)-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Abstract_Document_Error_(DL157)-1.0.zip",
+      "model": {
+        "label": "Abstract/Document Error (DL157)",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Abstract_Document_Error_(DL157).json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Abstract of Judgment",
+      "uri": "http://doj.ca.gov/niem/CDCAbstJudgem/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/CDCAbstJudgem/1.0",
+        "Name": "Abstract of Judgment",
+        "Summary": "The Abstract of Judgment IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "An Abstract of Judgment is sent from the Court to the jail and California Department of Corrections and Rehabilitation if the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.  The Abstract of Judgment contains court information, defendant information, charge information, and a signature block.  The Abstract of Judgment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "09/08/2008",
+        "LastRevisionDate": "02/05/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD CDCAbstJudgem complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "If the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport, the Court reports the prison sentence to the jail and to the California Department of Corrections and Rehabilitation.",
+        "TriggeringEvent": "Abstract of Judgment Complete",
+        "Conditions": "If the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the jail and California Department of Corrections and Rehabilitation when the Court has charged a subject to a prison sentence.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Abstract_of_Judgment-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Abstract_of_Judgment-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Abstract_of_Judgment-1.0.zip",
+      "model": {
+        "label": "Abstract of Judgment",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Abstract_of_Judgment.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Booking Intake/Personal Property Inventory",
+      "uri": "http://doj.ca.gov/niem/PreBooking/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/PreBooking/1.0",
+        "Name": "Booking Intake/Personal Property Inventory",
+        "Summary": "The Booking Intake/Personal Property Inventory IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Booking Intake/Personal Property Inventory is completed when a subject is taken into custody by a Law Enforcement Agency (LEA).  The LEA sends the form to the Sheriff's Office.  The LEA also sends a Probable Cause Declaration and the Intake Form to the Sheriff's Office at the time of booking.  The Booking Intake/Personal Property Inventory contains the subject's personal identifying information, arrest information, and personal property information.  The Booking Intake/Personal Property Inventory is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "10/13/2008",
+        "LastRevisionDate": "09/02/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD PreBooking complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The form is sent from the Law Enforcement Agency to the Sheriff's Office at the time of booking.",
+        "TriggeringEvent": "Booking Intake/Personal Property Inventory Complete",
+        "Conditions": "If a subject is taken into custody by a Law Enforcement Agency.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the Sheriff's Office of the subject's arrest and personal property collection at booking.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Booking_Intake_Personal_Property_Inventory-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Booking_Intake_Personal_Property_Inventory-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Booking_Intake_Personal_Property_Inventory-1.0.zip",
+      "model": {
+        "label": "Booking Intake/Personal Property Inventory",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Booking_Intake_Personal_Property_Inventory.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "California Department of Corrections and Rehabilitation Additional Commitment",
+      "uri": "http://doj.ca.gov/niem/CDCAddComm/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/CDCAddComm/1.0",
+        "Name": "California Department of Corrections and Rehabilitation Additional Commitment",
+        "Summary": "The California Department of Corrections and Rehabilitation Additional Commitment IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A California Department of Corrections and Rehabilitation Additional Commitment is used when the California Department of Corrections and Rehabilitation needs to report additional commitment information for an inmate.  The information is sent to the California Department of Justice in order to update the statewide criminal history file for the inmate.  The California Department of Corrections and Rehabilitation Additional Commitment contains inmate information, charge, enhancement, and sentencing information.  The California Department of Corrections and Rehabilitation Additional Commitment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "09/08/2008",
+        "LastRevisionDate": "02/04/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD CDCAddComm complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "When there is additional commitment information for an inmate, the California Department of Corrections and Rehabilitation sends the information to the California Department of Justice so the statewide criminal history system can be updated. ",
+        "TriggeringEvent": "California Department of Corrections and Rehabilitation Additional Commitment Complete",
+        "Conditions": "If there is additional commitment information for an inmate the data is sent to the California Department of Justice.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To keep the statewide criminal history system updated with current commitment information for an inmate.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0.zip",
+      "model": {
+        "label": "California Department of Corrections and Rehabilitation Additional Commitment",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "California Department of Corrections and Rehabilitation Detainer",
+      "uri": "http://doj.ca.gov/niem/CDCDetainer/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/CDCDetainer/1.0",
+        "Name": "California Department of Corrections and Rehabilitation Detainer",
+        "Summary": "The California Department of Corrections and Rehabilitation Detainer IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A California Department of Corrections and Rehabilitation Detainer is sent when the California Department of Corrections and Rehabilitation transfers a subject to the local jail when a removal order is issued by the Court and if the subject is transferred to local custody.  The Detainer is sent to the Sheriff's Department.  The California Department of Corrections and Rehabilitation Detainer contains information about the subject, warrant information, and agency information.  The California Department of Corrections and Rehabilitation Detainer is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "09/08/2008",
+        "LastRevisionDate": "02/04/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD CDCDetainer complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The Detainer is sent from the California Department of Corrections and Rehabilitation to the Sheriff's Department when a subject is transferred to local custody.",
+        "TriggeringEvent": "California Department of Corrections and Rehabilitation Detainer Complete",
+        "Conditions": "If a removal order is issued by the Court and if a subject is transferred to local custody.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the Sheriff's Department of a subject's transfer from custody within The California Department of Corrections and Rehabilitation to the local jail.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/California_Department_of_Corrections_and_Rehabilitation_Detainer-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/California_Department_of_Corrections_and_Rehabilitation_Detainer-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/California_Department_of_Corrections_and_Rehabilitation_Detainer-1.0.zip",
+      "model": {
+        "label": "California Department of Corrections and Rehabilitation Detainer",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/California_Department_of_Corrections_and_Rehabilitation_Detainer.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Commitment to California Youth Authority (JV732)",
+      "uri": "http://doj.ca.gov/niem/JV732/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/JV732/1.0",
+        "Name": "Commitment to California Youth Authority (JV732)",
+        "Summary": "The Commitment to California Youth Authority (JV732) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Commitment to California Youth Authority (JV732) is a form sent from the court to the California Youth Authority when the court sentences a subject to be committed to the California Youth Authority.  The Commitment to California Youth Authority contains court information, court order and findings, signature block.  The Commitment to California Youth Authority (JV732) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "10/06/2008",
+        "LastRevisionDate": "09/02/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD JV732 complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The court sends the Commitment to the California Youth Authority (JV732) form when the court has sentenced a subject to be committed to the California Youth Authority.",
+        "TriggeringEvent": "Commitment to California Youth Authority (JV732) Complete",
+        "Conditions": "The court has sentenced a subject to be committed to the California Youth Authority.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the California Youth Authority of the orders and findings of the court regarding a subject sentenced to the Youth Authority",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Commitment_to_California_Youth_Authority_(JV732)-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Commitment_to_California_Youth_Authority_(JV732)-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Commitment_to_California_Youth_Authority_(JV732)-1.0.zip",
+      "model": {
+        "label": "Commitment to California Youth Authority (JV732)",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Commitment_to_California_Youth_Authority_(JV732).json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "DNA Compliance",
+      "uri": "http://doj.ca.gov/niem/DNAComp/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/DNAComp/1.0",
+        "Name": "DNA Compliance",
+        "Summary": "The DNA Compliance IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A DNA Compliance is a form sent from the jail to the Court indicating that a DNA collection has been taken from a subject as detailed in a DNA Order from the Court.  The DNA Compliance contains information describing when a DNA collection has been taken, whether DNA collection was taken previously, and a signature block. The DNA Compliance is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/04/2008",
+        "LastRevisionDate": "01/21/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD DNAComp complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The jail informs the Court when DNA Collection has been taken from a subject.",
+        "TriggeringEvent": "DNA Compliance Complete",
+        "Conditions": "If the jail completes the response form for taking a DNA sample as described in a DNA Order, then the jail informs the Court of the outcome of the DNA collection from the subject. Conditions may change depending upon new Legislation.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "Allows the jail to inform the Court when DNA collection has been taken as a result of a DNA Order.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/DNA_Compliance-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/DNA_Compliance-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/DNA_Compliance-1.0.zip",
+      "model": {
+        "label": "DNA Compliance",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/DNA_Compliance.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "DNA Order",
+      "uri": "http://doj.ca.gov/niem/DNAOrder/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/DNAOrder/1.0",
+        "Name": "DNA Order",
+        "Summary": "The DNA Order IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A DNA Order is an order sent from the Court to the jail to collect DNA from a subject.  The DNA Order contains information about a subject such as case number, booking number, state identification number, location of the DNA collection site, and signature block.  The DNA Order is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/04/2008",
+        "LastRevisionDate": "01/21/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD DNAOrder complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The Court sends an order to the jail to collect DNA from a subject.",
+        "TriggeringEvent": "DNA Order Complete",
+        "Conditions": "If the Court orders the collection of a DNA sample and the subject has been convicted then an order is sent to the jail to collect the DNA sample.  Conditions may change depending upon new Legislation.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "Allows the Court to inform the jail when a DNA sample is required of a subject. ",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/DNA_Order-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/DNA_Order-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/DNA_Order-1.0.zip",
+      "model": {
+        "label": "DNA Order",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/DNA_Order.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Escape Notice",
+      "uri": "http://doj.ca.gov/niem/EscapeNotice/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/EscapeNotice/1.0",
+        "Name": "Escape Notice",
+        "Summary": "The Escape Notice IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "An Escape Notice is used to notify various agencies if a subject escapes or is captured.  If a subject escapes from jail, the Sheriff notifies the Prosecutor, the Court, and the California Department of Justice.  If a Public Defender respresents a subject and the subject escapes, then the Sheriff notifies the Public Defender of the escape.  If a subject escapes while in local custory and if the subject is under the jurisdiction of the California Department of Corrections and Rehabilitation (CDCR) then the Sheriff notifies the CDCR.  If a subject escapes from the state prison the CDCR informs the Sheriff and the Law Enforcement Agency of the escape.  \r\nIf a subject is detained and on probation, and if the subject escapes, the Sheriff notifies the Probation Department of the escape.  \r\nIf a subject is captured the CDCR notifies the Sheriff and the Law Enforcement Aency of the capture.  The Escape Notice is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/01/2008",
+        "LastRevisionDate": "01/30/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD EscapeNotice complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "Depending on conditions, a variety of law enforcement and criminal justice agencies are notified when a subject escapes and/or is captured.",
+        "TriggeringEvent": "Escape Notice Complete",
+        "Conditions": "If a subject escapes and/or is captured the Escape Notice is sent to a variety of agencies.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform law enforcement and criminal justice agencies of a subject's escape or capture.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Escape_Notice-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Escape_Notice-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Escape_Notice-1.0.zip",
+      "model": {
+        "label": "Escape Notice",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Escape_Notice.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Health Assessment",
+      "uri": "http://doj.ca.gov/niem/HealthAssmt/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/HealthAssmt/1.0",
+        "Name": "Health Assessment",
+        "Summary": "The Health Assessment IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Health Assessment is sent from the probation department to the youth authority when the court has sentenced a subject to the youth authority and there has been a health assessment conducted on the subject.  The Health Assessment contains subject personal identification information, physical assessment information, and date/time.  The Health Assessment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "10/06/2008",
+        "LastRevisionDate": "09/01/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD HealthAssmt complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "When the court sentences a subject to the youth authority and a health assessment has been completed by the probation department, the probation department forwards the health assessment form to the youth authority.",
+        "TriggeringEvent": "Health Assessment Complete",
+        "Conditions": "When a health assessment has been completed by the probation department and the subject is sentenced to the youth authority, the health assessment form is forwarded to the youth authority",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To provide subjects' health assessment information to the youth authority.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Health_Assessment-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Health_Assessment-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Health_Assessment-1.0.zip",
+      "model": {
+        "label": "Health Assessment",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Health_Assessment.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Individualized Education Program (IEP)",
+      "uri": "http://doj.ca.gov/niem/IndvEduProg/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/IndvEduProg/1.0",
+        "Name": "Individualized Education Program (IEP)",
+        "Summary": "The Individualized Education Program (IEP) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "An Individualized Education Program (IEP) is a form provided to the Youth Authority by the Probation Department when the court commits a juvenile to the Youth Authority.  The Individualized Education Program (IEP) contains personal identifying information about the juvenile, family relations, educational history, physical data, and state assessment.  The Individualized Education Program (IEP) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "10/06/2008",
+        "LastRevisionDate": "09/02/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD IndvEduProg complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The form is provided by the Probation Department to the Youth Authority when a juvenile is transferred from the Probation Department to the Youth Authority.",
+        "TriggeringEvent": "Individualized Education Program (IEP) Complete",
+        "Conditions": "If the court commits a juvenile to the Youth Authority, then the form is provided by the Probation Department to the Youth Authority.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To provide identifying information about the juvenile, educational history, and state assessment.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Individualized_Education_Program_(IEP)-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Individualized_Education_Program_(IEP)-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Individualized_Education_Program_(IEP)-1.0.zip",
+      "model": {
+        "label": "Individualized Education Program (IEP)",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Individualized_Education_Program_(IEP).json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Medical/Mental Health Transfer Summary",
+      "uri": "http://doj.ca.gov/niem/MMHTransSum/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/MMHTransSum/1.0",
+        "Name": "Medical/Mental Health Transfer Summary",
+        "Summary": "The Medical/Mental Health Transfer Summary IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Medical/Mental Health Transfer Summary details medical data about a subject.  The data is sent from the jail to the California Department of Corrections and Rehabilitation reception center if a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation.  The Medical/Mental Health Transfer Summary contains information pertaining to the subject, medications, and other medical history information.  The Medical/Mental Health Transfer Summary is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "010/06/2008",
+        "LastRevisionDate": "02/05/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD MMHTransSum complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "When the jail transfers custody of a subject to the jurisdiction of the California Department of Corrections and Rehabilitation, the Medical/Mental Health Transfer Summary is sent to the reception center.",
+        "TriggeringEvent": "Medical/Mental Health Transfer Summary Complete",
+        "Conditions": "If a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the California Department of Corrections and Rehabilitation of a transfer subject's medical/mental health summary.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Medical_Mental_Health_Transfer_Summary-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Medical_Mental_Health_Transfer_Summary-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Medical_Mental_Health_Transfer_Summary-1.0.zip",
+      "model": {
+        "label": "Medical/Mental Health Transfer Summary",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Medical_Mental_Health_Transfer_Summary.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Notice of Parole Hearing",
+      "uri": "http://doj.ca.gov/niem/NoticeParoleHrg/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/NoticeParoleHrg/1.0",
+        "Name": "Notice of Parole Hearing",
+        "Summary": "The Notice of Parole Hearing IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Notice of Parole Hearing is a form sent from the California Department of Corrections and Rehabilitation to the Prosecutor when a subject is serving a life term and is eligible for parole pursuant to Penal Code 3042.  This communication informs the Prosecutor of the subject's parole eligibility. The Notice of Parole Hearing contains information regarding the type of hearing, parole subject information, and narrative information regarding the process.  The Notice of Parole Hearing is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/01/2008",
+        "LastRevisionDate": "01/30/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD NoticeParoleHrg complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "If a subject is serving a life term and if the subject is eligible for parole, pursuant to Penal Code 3042, the California Department of Corrections and Rehabilitation informs the Prosecutor of the subject?s parole eligibility.",
+        "TriggeringEvent": "Notice of Parole Hearing Complete",
+        "Conditions": "If a subject is serving a life term and is eligible for parole.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the Prosecutor of a subject's parole eligibility.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Notice_of_Parole_Hearing-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Notice_of_Parole_Hearing-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Notice_of_Parole_Hearing-1.0.zip",
+      "model": {
+        "label": "Notice of Parole Hearing",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Notice_of_Parole_Hearing.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Notice of Priority Re-examination of Driver Form (DS427)",
+      "uri": "http://doj.ca.gov/niem/DS427/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/DS427/1.0",
+        "Name": "Notice of Priority Re-examination of Driver Form (DS427)",
+        "Summary": "The Notice of Priority Re-examination of Driver Form (DS427) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Notice of Priority Re-examination of Driver Form (DS427) is sent from a Law Enforcement Officer to the California Department of Motor Vehicles when an Officer believes that a subject's driving privilege should be investigated.  The Officer indicates on the Notice of Priority Re-examination of Driver Form (DS427) what actions were displayed by the subject to lead the Officer to believe a re-examination of driving privilege is needed.  The Notice of Priority Re-examination of Driver Form (DS427) contains information relevant to the driver, location of occurrence, summary of actions and possible traffic law violations, and a signature block.  The Notice of Priority Re-examination of Driver Form (DS427) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/04/2008",
+        "LastRevisionDate": "01/21/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD DS427 complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "A Law Enforcement Officer provides reasons why a subject's driving privilege should be investigated. The completed form is provided to the driver and to the California Department of Motor Vehicles.",
+        "TriggeringEvent": "Notice of Priority Re-examination of Driver Form (DS427) Complete",
+        "Conditions": "If a subject appears to be incapable of operating a motor vehicle safely and the Law Enforcement Officer has reason to request an investigation into the subject's driving privilege then the form is sent from the Officer to the California Department of Motor Vehicles.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "Provides a way for a Law Enforcement Officer to communicate with the California Department of Motor Vehicles when a subject's privilege to drive is in question.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0.zip",
+      "model": {
+        "label": "Notice of Priority Re-examination of Driver Form (DS427)",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427).json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Notice of Scheduled Release to Parole (CDC863)",
+      "uri": "http://doj.ca.gov/niem/CDC863/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/CDC863/1.0",
+        "Name": "Notice of Scheduled Release to Parole (CDC863)",
+        "Summary": "The Notice of Scheduled Release to Parole (CDC863) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Notice of Scheduled Release to Parole (CDC863) is sent from the California Department of Corrections and Rehabilitation when a subject is released to parole and the notice is sent to the Law Enforcement Agency and Probation.  If a violent offender notification is required per Penal Code 3058.6 and/or a notification is required by law then the notice is also sent to the Prosecutor.  The Notice of Scheduled Release to Parole (CDC863) contains information about the sending and receiving agencies, parole subject information, and any registration requirements.  The Notice of Scheduled Release to Parole (CDC863) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/01/2008",
+        "LastRevisionDate": "01/30/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD CDC863 complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "When a subject is being released to parole the California Department of Corrections and Rehabilitation sends notice to the Law Enforcement Agency, Probation, and depending upon conditions, sends the notice to the Prosecutor.",
+        "TriggeringEvent": "Notice of Scheduled Release to Parole (CDC863) Complete",
+        "Conditions": "A subject is being released to parole.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To communicate to the Law Enforcement Agency, Probation, and Prosecutor when a subject is being released to parole and whether the subject has registration requirements.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Notice_of_Scheduled_Release_to_Parole_(CDC863)-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Notice_of_Scheduled_Release_to_Parole_(CDC863)-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Notice_of_Scheduled_Release_to_Parole_(CDC863)-1.0.zip",
+      "model": {
+        "label": "Notice of Scheduled Release to Parole (CDC863)",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Notice_of_Scheduled_Release_to_Parole_(CDC863).json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Police Report",
+      "uri": "http://doj.ca.gov/niem/PoliceRpt/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/PoliceRpt/1.0",
+        "Name": "Police Report",
+        "Summary": "The Police Report IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Police Report is sent to several recipients dependant upon the circumstance under which the Police Report is generated.  A full description is provided in the IEPD Documentation file.  Possible recipients of the Police Report are the Department of Justice, Prosecutor, and the California Department of Corrections and Rehabilitation.  The Police Report contains party, subject, and vicitim information, as well as incident descriptors.  The Police Report is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "10/06/2008",
+        "LastRevisionDate": "08/20/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD PoliceRpt complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The Law Enforcement Agency sends the police report to the California Department of Justice, Prosecutor, and the California Department of Corrections and Rehabilitation dependant upon the circumstances under which the report is generated.",
+        "TriggeringEvent": "Police Report Complete",
+        "Conditions": "The Police Report is completed when a crime is committed and sent to the California Department of Justice, Prosecutor, or California Department of Corrections and Rehabilitation if the charges are reportable, committed in custody, committed on parole or probation.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To provide charge and incident information to various criminal justice agencies",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Police_Report-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Police_Report-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Police_Report-1.0.zip",
+      "model": {
+        "label": "Police Report",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Police_Report.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Report of Controlled Substances Examination",
+      "uri": "http://doj.ca.gov/niem/CntrlSubLabRpt/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/CntrlSubLabRpt/1.0",
+        "Name": "Report of Controlled Substances Examination",
+        "Summary": "The Report of Controlled Substances Examination IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Report of Controlled Substances Examination is sent from the Sheriff to the Prosecutor if the lab analyzes evidence for controlled substance related to a pending case.  The report details the lab results related to controlled substances.  The Prosecutor in turn informs the Public Defender of the lab results. .  The Report of Controlled Substances Examination contains lab information, description of the evidence, examination results, and a signature block.  The Report of Controlled Substances Examination is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "08/29/2008",
+        "LastRevisionDate": "02/03/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD CntrlSubLabRpt complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "If the lab analyzes evidence for controlled substances, the lab results are sent from the Sheriff to the Prosecutor and from the Prosecutor to the Public Defender.",
+        "TriggeringEvent": "Report of Controlled Substances Examination Complete",
+        "Conditions": "If the lab analyzes evidence for controlled substances.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "To inform the Prosecutor and Public Defender of lab results related to evidence in a pending case.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Report_of_Controlled_Substances_Examination-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Report_of_Controlled_Substances_Examination-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Report_of_Controlled_Substances_Examination-1.0.zip",
+      "model": {
+        "label": "Report of Controlled Substances Examination",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Report_of_Controlled_Substances_Examination.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Subpoena",
+      "uri": "http://doj.ca.gov/niem/Subpoena/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/Subpoena/1.0",
+        "Name": "Subpoena",
+        "Summary": "The Subpoena IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Subpoena is a command to appear before a designated court on a particular date and time as a witness in a criminal action prosecuted by The People of The State of California.  A subpeona is sent from the Prosecutor and/or Public Defender to a Law Enforcement Agency and/or Sheriff's Department.  The Subpoenat contains court information such as court location, date, time, and signature block.  The Subpoena is one of 44 IEPDs developed by California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "07/21/2008",
+        "LastRevisionDate": "01/21/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD Subpoena complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "The Subpoena is sent to a Law Enforcement Agency and/or Sheriff's Department  by the Prosecutor and/or Public Defender to notify of a subject's court appearance and requirement for an Officer to appear in court.",
+        "TriggeringEvent": "Subpoena Complete",
+        "Conditions": "If the court schedules a first appearance, a subsequent appearance, and/or requires the Officer to appear in court to testify, then the Subpoena is sent to the Law Enforcement Agency and/or Sheriff's Department. ",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "Notifies a Law Enforcement Agency and/or Sheriff's Department if a subject is scheduled for a first appearance or subsequent appearance in court and may notify that an Officer's testimony is required.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Subpoena-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Subpoena-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Subpoena-1.0.zip",
+      "model": {
+        "label": "Subpoena",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Subpoena.json"
+      }
+    }
+  },
+  {
+    "data": {
+      "version": "1.0",
+      "baseNIEM": "2.0",
+      "modelName": "Youth Authority Referral Document (YA 1.411)",
+      "uri": "http://doj.ca.gov/niem/YA1411/1.0",
+      "more": {
+        "URI": "http://doj.ca.gov/niem/YA1411/1.0",
+        "Name": "Youth Authority Referral Document (YA 1.411)",
+        "Summary": "The Youth Authority Referral Document (YA 1.411) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+        "Description": "A Youth Authority Referral Document (YA 1.411) is a form sent from the Probation Department to the Youth Authority when a juvenile is referred from Probation to the Youth Authority.  The Youth Authority Referral Document (YA 1.411) contains personal identifying information about the juvenile, some medical information, commitment information, and family relations.  The Youth Authority Referral Document (YA 1.411) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+        "Version": "1.0",
+        "CreationDate": "10/06/2008",
+        "LastRevisionDate": "09/02/2009",
+        "NIEMVersion": "2.0",
+        "Security": "Public",
+        "Maturity": "2",
+        "Status": "IEPD YA1411 complete and ready for implementation",
+        "Domain": "Justice",
+        "ExchangePartners": "California state and local criminal justice agencies",
+        "Process": "If a juvenile is in custody of the probation department and awaiting adjudication and is a danger to self or others, and if the county facility is overcrowded and the county requests bed space for the juvenile, then the probation department provides this document to the youth authority.  The probation department will also provide this form to the youth authority in the case when the court sentences the juvenile to the youth authority.",
+        "TriggeringEvent": "Youth Authority Referral Document (YA 1.411) Complete",
+        "Conditions": "If a juvenile is referred from the probation department to the youth authority, the form is sent from probation to the youth authority.",
+        "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+        "Purpose": "Provide the youth authority with information about the juvenile such as personal identifying information, medical and offense information, and family relations.",
+        "MessageExchangePatterns": "document",
+        "ExchangePartnerCategories": "California state and local criminal justice agencies"
+      }
+    },
+    "links": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Youth_Authority_Referral_Document_(YA_1.411)-1.0.json",
+      "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Youth_Authority_Referral_Document_(YA_1.411)-1.0",
+      "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Youth_Authority_Referral_Document_(YA_1.411)-1.0.zip",
+      "model": {
+        "label": "Youth Authority Referral Document (YA 1.411)",
+        "href": "https://cdmgtri.github.io/niem-model-api/api/models/Youth_Authority_Referral_Document_(YA_1.411).json"
+      }
+    }
+  }
+]

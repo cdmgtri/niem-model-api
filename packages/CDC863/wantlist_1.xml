@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList w:release="2.0" w:product="NIEM" xmlns:w="http://niem.gov/niem/wantlist/1">
+  <w:Element w:prefix="j" w:name="Charge" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="CourtOrderSignatureMethodText" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="Detention" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="PersonAFISIdentification" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="PersonFBIIdentification" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="Address" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="CaseTrackingID" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="ContactTelephoneNumber" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="DateTime" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="FacilityName" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="OrganizationName" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="Person" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonDigitizedSignatureImage" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonName" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="StructuredAddress" w:isReference="false"/>
+  <w:Element w:prefix="scr" w:name="DetentionAugmentation" w:isReference="false"/>
+  <w:Element w:prefix="scr" w:name="InmateNumber" w:isReference="false"/>
+  <w:Type w:prefix="j" w:name="ChargeType" w:isRequested="false">
+    <w:ElementInType w:prefix="j" w:name="ChargeStatute" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="j" w:name="StatuteType" w:isRequested="false">
+    <w:ElementInType w:prefix="j" w:name="StatuteCodeIdentification" w:isReference="false"/>
+    <w:ElementInType w:prefix="j"
+      w:name="StatuteCodeSectionIdentification" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="CaseType" w:isRequested="true">
+    <w:ElementInType w:prefix="nc" w:name="CaseTrackingID" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="IdentificationType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="IdentificationID" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="PersonNameType" w:isRequested="false">
+    <w:AttributeInType w:prefix="nc" w:name="personNameCommentText"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonFullName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonGivenName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonMaidenName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonMiddleName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonNamePrefixText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonNameSuffixText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonSurName" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="PersonType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="PersonBirthDate" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="StructuredAddressType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="AddressDeliveryPoint" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="AddressRecipientName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationCityName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationCountry" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationCounty" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationPostalCode" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationPostalExtensionCode" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="LocationState" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="scr" w:name="DetentionAugmentationType" w:isRequested="false">
+    <w:ElementInType w:prefix="scr" w:name="ProjectedReleaseDate" w:isReference="false"/>
+  </w:Type>
+</w:WantList>

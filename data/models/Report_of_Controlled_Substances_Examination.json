@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Report of Controlled Substances Examination",
+    "summary": "The Report of Controlled Substances Examination IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Report of Controlled Substances Examination is sent from the Sheriff to the Prosecutor if the lab analyzes evidence for controlled substance related to a pending case.  The report details the lab results related to controlled substances.  The Prosecutor in turn informs the Public Defender of the lab results. .  The Report of Controlled Substances Examination contains lab information, description of the evidence, examination results, and a signature block.  The Report of Controlled Substances Examination is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Report_of_Controlled_Substances_Examination",
+    "href": "https://cdmgtri.github.io/niem-model-api/api/models/Report_of_Controlled_Substances_Examination.json",
+    "versions": {
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Report_of_Controlled_Substances_Examination/versions.json",
+      "count": 1
+    }
+  }
+}

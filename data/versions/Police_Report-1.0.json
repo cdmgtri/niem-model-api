@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Police Report",
+    "uri": "http://doj.ca.gov/niem/PoliceRpt/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/PoliceRpt/1.0",
+      "Name": "Police Report",
+      "Summary": "The Police Report IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "A Police Report is sent to several recipients dependant upon the circumstance under which the Police Report is generated.  A full description is provided in the IEPD Documentation file.  Possible recipients of the Police Report are the Department of Justice, Prosecutor, and the California Department of Corrections and Rehabilitation.  The Police Report contains party, subject, and vicitim information, as well as incident descriptors.  The Police Report is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "10/06/2008",
+      "LastRevisionDate": "08/20/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD PoliceRpt complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "The Law Enforcement Agency sends the police report to the California Department of Justice, Prosecutor, and the California Department of Corrections and Rehabilitation dependant upon the circumstances under which the report is generated.",
+      "TriggeringEvent": "Police Report Complete",
+      "Conditions": "The Police Report is completed when a crime is committed and sent to the California Department of Justice, Prosecutor, or California Department of Corrections and Rehabilitation if the charges are reportable, committed in custody, committed on parole or probation.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To provide charge and incident information to various criminal justice agencies",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://cdmgtri.github.io/niem-model-api/api/versions/Police_Report-1.0.json",
+    "folder": "https://cdmgtri.github.io/niem-model-api/api/packages/Police_Report-1.0",
+    "zip": "https://cdmgtri.github.io/niem-model-api/api/zips/Police_Report-1.0.zip",
+    "model": {
+      "label": "Police Report",
+      "href": "https://cdmgtri.github.io/niem-model-api/api/models/Police_Report.json"
+    }
+  }
+}

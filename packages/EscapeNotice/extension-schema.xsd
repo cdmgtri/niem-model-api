@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/EscapeNotice/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:scr="http://niem.gov/niem/domains/screening/2.0" targetNamespace="http://doj.ca.gov/niem/EscapeNotice/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\EscapeNotice\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\EscapeNotice\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\EscapeNotice\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\EscapeNotice\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/screening/2.0" schemaLocation="..\EscapeNotice\niem\domains\screening\2.0\screening.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="EscapeType">
+		<xsd:annotation>
+			<xsd:documentation>A data type that defines the elements which depict the event of the escape</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:LocationMapLocation"/>
+					<xsd:element ref="j:SubjectCautionInformationCode"/>
+					<xsd:element ref="nc:LocationDescriptionText"/>
+					<xsd:element ref="cadoj:EscapeDate"/>
+					<xsd:element ref="cadoj:EscapeTime"/>
+					<xsd:element ref="nc:RelativeLocationDirectionText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EscapeNoticeType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for Notice of Parole Hearing.  Quantitive synopsis of all the document information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="OriginatingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for the Originating Law Enforcement Agency.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationIdentification"/>
+					<xsd:element ref="cadoj:AgencyCaseID"/>
+					<xsd:element ref="cadoj:PrimaryContact"/>
+					<xsd:element ref="cadoj:SecondaryContact"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PrimaryContactType">
+		<xsd:annotation>
+			<xsd:documentation>A data type the Law Enforcement Agency Primary Contact Information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:CDCJobTitle"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SecondaryContactType">
+		<xsd:annotation>
+			<xsd:documentation>A data type the Law Enforcement Agency Secondary Contact Information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:CDCJobTitle"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type the Subject of the Escape Notification Information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:Vehicle"/>
+					<xsd:element ref="nc:SupervisionFacility"/>
+					<xsd:element ref="cadoj:CDCIdentifierNumber"/>
+					<xsd:element ref="j:BookingFileIdentification"/>
+					<xsd:element ref="j:PersonStateFingerprintIdentification"/>
+					<xsd:element ref="j:PersonFBIIdentification"/>
+					<xsd:element ref="nc:Address"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+					<xsd:element ref="nc:PersonHeightMeasure"/>
+					<xsd:element ref="nc:PersonWeightMeasure"/>
+					<xsd:element ref="nc:PersonSexCode"/>
+					<xsd:element ref="nc:PersonHairColorCode"/>
+					<xsd:element ref="nc:PersonEyeColorCode"/>
+					<xsd:element ref="scr:PersonPhysicalMarkingID"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="VehicleType">
+		<xsd:annotation>
+			<xsd:documentation>An extenstion to the base type Vehicle, we add the vehicle license number </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:VehicleType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:VehicleLicenseNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="AgencyCaseID" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The originating agency's case number.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDCIdentifierNumber" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The CDC identifier number for the escaped inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDCJobTitle" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The CDC Job Title Identifier.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Escape" type="cadoj:EscapeType">
+		<xsd:annotation>
+			<xsd:documentation>the information on the escape</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EscapeDate" type="niem-xsd:date">
+		<xsd:annotation>
+			<xsd:documentation>The date the inmate escaped.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EscapeNotice" type="cadoj:EscapeNoticeType">
+		<xsd:annotation>
+			<xsd:documentation>An overall summary information of the Escape Notice.  Quantitive synopsis of all the document information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EscapeTime" type="niem-xsd:time">
+		<xsd:annotation>
+			<xsd:documentation>The approximate time (24 our clock) the inmate escaped
+</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OriginatingAgency" type="cadoj:OriginatingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Overall summary information for the Originating Law Enforcement Agency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PrimaryContact" type="cadoj:PrimaryContactType">
+		<xsd:annotation>
+			<xsd:documentation>Law Enforcement Agency Primary Contact Information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SecondaryContact" type="cadoj:SecondaryContactType">
+		<xsd:annotation>
+			<xsd:documentation>Law Enforcement Agency Secondary Contact Information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Subject" type="cadoj:SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>The Subject of the Escape Notification Information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="VehicleLicenseNumber" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>The license number of the vehicle used by the escaped inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/DL157/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/DL157/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\DL157\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\DL157\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\DL157\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\DL157\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="DL157Type">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of the DL157.  Quantitive synopsis of all the document information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:complexType>
+	<xsd:complexType name="CourtType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Court and Branch Name</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CourtIdentificationNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtClerkType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of Court Clerk Information></xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:Signature" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="OriginalCitationIssuedToType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of Citation Information for who it was erroneously issued></xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonBirthDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DriverRecordToAdjustType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of Information for the Driver Record that needs Adjustment></xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonBirthDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="cadoj:DriverLicenseIdentification" minOccurs="0"/>
+					<xsd:element ref="nc:StructuredAddress" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtAppearenceType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for information on Court Ordered Appearences.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CourtAppearanceDate" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ChargeDispostionType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection Charge Dispostion Information></xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ChargeDispostionDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+   	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="CourtAppearanceDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Appearance date for an individual court case.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ChargeDispostionDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date of the final disposition of the charge.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CitationDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Date of the citation.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CitationNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Unique identifier assigned to a law enforcement citation.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Court" type="cadoj:CourtType">
+		<xsd:annotation>
+			<xsd:documentation>Court and Branch Name information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtIdentificationNumber" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Unique identifier assigned to a specific court.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtClerk" type="cadoj:CourtClerkType">
+		<xsd:annotation>
+			<xsd:documentation>Case holder for Court Clerk data.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DL157" type="cadoj:DL157Type">
+		<xsd:annotation>
+			<xsd:documentation>An overall summary information of the Affidafit Search Warrant.  Quantitive synopsis of all the document information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DriverLicenseIdentification" type="nc:DriverLicenseType">
+		<xsd:annotation>
+			<xsd:documentation>Driver License.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DriverRecordToAdjust" type="cadoj:DriverRecordToAdjustType">
+		<xsd:annotation>
+			<xsd:documentation>Case holder for Driver that needs adjustment to record.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OriginalCitationIssuedTo" type="cadoj:OriginalCitationIssuedToType">
+		<xsd:annotation>
+			<xsd:documentation>Case holder for information on the original citation owner.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/Subpoena/Extension/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/Subpoena/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\Subpoena\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\Subpoena\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\Subpoena\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\Subpoena\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<!-- Type definitions for Extensions  -->
+	<xsd:complexType name="SubpoenaType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of the Subpoena.  Quantitive synopsis of all the document information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence></xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Court related Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationBranchName"/>
+					<xsd:element ref="nc:Address"/>
+					<xsd:element ref="j:CourtName"/>
+					<xsd:element ref="cadoj:CourtDMVFTACode"/>
+					</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EnforcementAgencyType">
+		<xsd:complexContent>
+			<xsd:extension base="nc:OrganizationType">
+				<xsd:sequence>
+					<xsd:element ref="j:CourtOrderEnforcementAgency"/>
+					<xsd:element ref="nc:Address"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DefendentType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of Judges Information></xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:RoleOfPersonReference"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="OfficerType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for collecting the Subjects Identifying information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:RoleOfPersonReference"/>
+					<xsd:element ref="j:EnforcementOfficialBadgeIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProsecutorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for collecting CourtClerk information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:RoleOfPersonReference"/>
+					<xsd:element ref="cadoj:Signature" minOccurs="0"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="j:JudicialOfficialCategoryText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PreMeetingContactPersonType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for collecting information on the PreMeeting Contact Person.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:RoleOfPersonReference"/>
+					<xsd:element ref="nc:ContactEmailID"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DAInvestigatorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for collecting information on the DAI nvestigator Person.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:RoleOfPersonReference"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubpoenaPreMeetingType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for collecting information on the court ordered Subpoena PreMeeting.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PreMeetingDate"/>
+					<xsd:element ref="cadoj:PreMeetingTime"/>
+					<xsd:element ref="cadoj:PreMeetingContactPerson"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubpoenaCourtAppearanceType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for an arraignment associated to an arrest</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:CourtAppearanceType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:AppearanceTime"/>
+					<xsd:element ref="j:CourtAppearanceDate"/>
+					<xsd:element ref="j:CourtAppearanceCategoryText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+		</xsd:complexType>
+	<!-- Global Element Deffinitions  -->
+	<xsd:element name="Subpoena" type="cadoj:SubpoenaType">
+		<xsd:annotation>
+			<xsd:documentation>Quantitive synopsis of all the document information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>  
+	<xsd:element name="Court" type="cadoj:CourtType"> 
+		<xsd:annotation>
+			<xsd:documentation>Court and Branch Name information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtAppearance" type="cadoj:SubpoenaCourtAppearanceType">
+		<xsd:annotation>
+			<xsd:documentation>Subpoena Court Appearance information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtDMVFTACode" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identifying code assigned to the court for the purposes of reporting under the DMV FTA-FTP Collections program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ArrestDocument" type="nc:DocumentType">
+		<xsd:annotation>
+			<xsd:documentation>A Class Container for Arresting Document Information Collections program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Defendent" type="cadoj:DefendentType">
+		<xsd:annotation>
+			<xsd:documentation>Defendent is a Role Of Person Container.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Officer" type="cadoj:OfficerType">
+		<xsd:annotation>
+			<xsd:documentation>Officer is a Role Of Person Container.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DAInvestigator" type="cadoj:DAInvestigatorType">
+		<xsd:annotation>
+			<xsd:documentation>DAInvestigator is a Role Of Person Container.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Prosecutor" type="cadoj:ProsecutorType">
+		<xsd:annotation>
+			<xsd:documentation>Prosecutor is a Role Of Person Container.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PreMeetingContactPerson" type="cadoj:PreMeetingContactPersonType">
+		<xsd:annotation>
+			<xsd:documentation>PreMeetingContactPerson is a Role Of Person Container..</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SubpoenaPreMeeting" type="cadoj:SubpoenaPreMeetingType">
+		<xsd:annotation>
+			<xsd:documentation>A container for holding Subpoena PreMeeting Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AppearanceTime" type="niem-xsd:time">
+		<xsd:annotation>
+			<xsd:documentation>Time of a court appearance in a 24 hour clock.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="HearingLocation" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Description of where to report for the hearing.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PreMeetingDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Appearance date for pre-meeting</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PreMeetingTime" type="niem-xsd:time">
+		<xsd:annotation>
+			<xsd:documentation>Appearance time for pre-meeting</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EnforcementAgency" type="cadoj:EnforcementAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Appearance date for an individual court case.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="AppearanceDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Appearance date for an individual court case.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

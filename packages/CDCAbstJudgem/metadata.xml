@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/CDCAbstJudgem/1.0</URI>
+    <Name>Abstract of Judgment</Name>
+    <Summary>The Abstract of Judgment IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>An Abstract of Judgment is sent from the Court to the jail and California Department of Corrections and Rehabilitation if the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.  The Abstract of Judgment contains court information, defendant information, charge information, and a signature block.  The Abstract of Judgment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>09/08/2008</CreationDate>
+    <LastRevisionDate>02/05/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD CDCAbstJudgem complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>If the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport, the Court reports the prison sentence to the jail and to the California Department of Corrections and Rehabilitation.</Process>
+    <TriggeringEvent>Abstract of Judgment Complete</TriggeringEvent>
+    <Conditions>If the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To inform the jail and California Department of Corrections and Rehabilitation when the Court has charged a subject to a prison sentence.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/DS427/Extension/1.0" xmlns:cadojDS427codes="http://doj.ca.gov/niem/DS427/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:scr="http://niem.gov/niem/domains/screening/2.0" targetNamespace="http://doj.ca.gov/niem/DS427/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\DS427\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\DS427\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\DS427\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\DS427\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/DS427/Codes/1.0" schemaLocation="..\DS427\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="ArrestDocumentType">
+		<xsd:annotation>
+			<xsd:documentation>Arrest Document Data Container.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:FileNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DriverType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Drivers information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DS427Type">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for Notice of Priority Re-examination of Driver Form.  Quantitive synopsis of all the document information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:NoticeDate"/>
+					<xsd:element ref="cadoj:NoticeTime"/>
+					<xsd:element ref="cadoj:FaxedDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DriverRe-ExaminationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for summary information regarding the Drivers Re Examiniation.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:Request"/>
+					<xsd:element ref="cadoj:Reason"/>
+					<xsd:element ref="cadoj:CourtRequestNotification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ObservationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Officer Observation of Driver Information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:DriverBehavior"/>
+					<xsd:element ref="cadoj:DriverCondition"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="OfficerType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Officer Information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:Signature"/>
+					<xsd:element ref="cadoj:Observation"/>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="ArrestDocument" type="cadoj:ArrestDocumentType">
+		<xsd:annotation>
+			<xsd:documentation>Arrest Document information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Driver" type="cadoj:DriverType">
+		<xsd:annotation>
+			<xsd:documentation>Driver information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DriverBehavior" type="cadojDS427codes:DriverBehaviorCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Driver's actions observed by Officer leading to request for re-examination
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DriverCondition" type="cadojDS427codes:DriverConditionCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Driver's physical or mental condition observed by Officer leading to request for re-examination
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DriverRe-Examination" type="cadoj:DriverRe-ExaminationType">
+		<xsd:annotation>
+			<xsd:documentation>Driver Re-Examination information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DS427" type="cadoj:DS427Type">
+		<xsd:annotation>
+			<xsd:documentation>An overall summary information of the – Notice of Priority Re-examination of Driver Form.  Quantitive synopsis of all the document information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FaxedDate" type="xsd:date">
+		<xsd:annotation>
+			<xsd:documentation>The date a document was faxed.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!--xsd:element name="FileNumber" type="nc:DocumentFileControlID">
+		<xsd:annotation>
+			<xsd:documentation>Unique identifier of the arresting agency file number
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element-->
+	<xsd:element name="FileNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Unique identifier of the arresting agency file number
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NoticeDate" type="xsd:date">
+		<xsd:annotation>
+			<xsd:documentation>Date the Notice of Suspension for Non-Compliance was written..
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NoticeTime" type="xsd:time">
+		<xsd:annotation>
+			<xsd:documentation>Time the Notice of Suspension for Non-Compliance was written..
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Officer" type="cadoj:OfficerType">
+		<xsd:annotation>
+			<xsd:documentation>Officer Information..
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Observation" type="cadoj:ObservationType">
+		<xsd:annotation>
+			<xsd:documentation>Officer Observations of Driver Information..
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Request" type="cadojDS427codes:RequestCodesType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether the request for re-examination of a driver is a priority or regular request</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Reason" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Text describing the actions of the driver that led the officer to believe a re-examination is needed.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtRequestNotification" type="cadojDS427codes:YesNoCodeType">
+		<xsd:annotation>
+			<xsd:documentation>A code indicating whether the officer or the court requests notification of the results of the re-examination of a driver.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

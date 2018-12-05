@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/CDCDetainer/1.0</URI>
+    <Name>California Department of Corrections and Rehabilitation Detainer</Name>
+    <Summary>The California Department of Corrections and Rehabilitation Detainer IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>A California Department of Corrections and Rehabilitation Detainer is sent when the California Department of Corrections and Rehabilitation transfers a subject to the local jail when a removal order is issued by the Court and if the subject is transferred to local custody.  The Detainer is sent to the Sheriff's Department.  The California Department of Corrections and Rehabilitation Detainer contains information about the subject, warrant information, and agency information.  The California Department of Corrections and Rehabilitation Detainer is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>09/08/2008</CreationDate>
+    <LastRevisionDate>02/04/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD CDCDetainer complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>The Detainer is sent from the California Department of Corrections and Rehabilitation to the Sheriff's Department when a subject is transferred to local custody.</Process>
+    <TriggeringEvent>California Department of Corrections and Rehabilitation Detainer Complete</TriggeringEvent>
+    <Conditions>If a removal order is issued by the Court and if a subject is transferred to local custody.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To inform the Sheriff's Department of a subject's transfer from custody within The California Department of Corrections and Rehabilitation to the local jail.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

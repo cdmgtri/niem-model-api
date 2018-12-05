@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/MMHTransSum/1.0</URI>
+    <Name>Medical/Mental Health Transfer Summary</Name>
+    <Summary>The Medical/Mental Health Transfer Summary IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>A Medical/Mental Health Transfer Summary details medical data about a subject.  The data is sent from the jail to the California Department of Corrections and Rehabilitation reception center if a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation.  The Medical/Mental Health Transfer Summary contains information pertaining to the subject, medications, and other medical history information.  The Medical/Mental Health Transfer Summary is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>010/06/2008</CreationDate>
+    <LastRevisionDate>02/05/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD MMHTransSum complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>When the jail transfers custody of a subject to the jurisdiction of the California Department of Corrections and Rehabilitation, the Medical/Mental Health Transfer Summary is sent to the reception center.</Process>
+    <TriggeringEvent>Medical/Mental Health Transfer Summary Complete</TriggeringEvent>
+    <Conditions>If a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To inform the California Department of Corrections and Rehabilitation of a transfer subject's medical/mental health summary.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

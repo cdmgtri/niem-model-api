@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Escape Notice",
+    "summary": "The Escape Notice IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "An Escape Notice is used to notify various agencies if a subject escapes or is captured.  If a subject escapes from jail, the Sheriff notifies the Prosecutor, the Court, and the California Department of Justice.  If a Public Defender respresents a subject and the subject escapes, then the Sheriff notifies the Public Defender of the escape.  If a subject escapes while in local custory and if the subject is under the jurisdiction of the California Department of Corrections and Rehabilitation (CDCR) then the Sheriff notifies the CDCR.  If a subject escapes from the state prison the CDCR informs the Sheriff and the Law Enforcement Agency of the escape.  \r\nIf a subject is detained and on probation, and if the subject escapes, the Sheriff notifies the Probation Department of the escape.  \r\nIf a subject is captured the CDCR notifies the Sheriff and the Law Enforcement Aency of the capture.  The Escape Notice is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Escape_Notice",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Escape_Notice.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Escape_Notice/versions.json",
+      "count": 1
+    }
+  }
+}

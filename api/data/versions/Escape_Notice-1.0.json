@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Escape Notice",
+    "uri": "http://doj.ca.gov/niem/EscapeNotice/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/EscapeNotice/1.0",
+      "Name": "Escape Notice",
+      "Summary": "The Escape Notice IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "An Escape Notice is used to notify various agencies if a subject escapes or is captured.  If a subject escapes from jail, the Sheriff notifies the Prosecutor, the Court, and the California Department of Justice.  If a Public Defender respresents a subject and the subject escapes, then the Sheriff notifies the Public Defender of the escape.  If a subject escapes while in local custory and if the subject is under the jurisdiction of the California Department of Corrections and Rehabilitation (CDCR) then the Sheriff notifies the CDCR.  If a subject escapes from the state prison the CDCR informs the Sheriff and the Law Enforcement Agency of the escape.  \r\nIf a subject is detained and on probation, and if the subject escapes, the Sheriff notifies the Probation Department of the escape.  \r\nIf a subject is captured the CDCR notifies the Sheriff and the Law Enforcement Aency of the capture.  The Escape Notice is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "08/01/2008",
+      "LastRevisionDate": "01/30/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD EscapeNotice complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "Depending on conditions, a variety of law enforcement and criminal justice agencies are notified when a subject escapes and/or is captured.",
+      "TriggeringEvent": "Escape Notice Complete",
+      "Conditions": "If a subject escapes and/or is captured the Escape Notice is sent to a variety of agencies.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To inform law enforcement and criminal justice agencies of a subject's escape or capture.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Escape_Notice-1.0.json",
+    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Escape_Notice",
+    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Escape_Notice.zip",
+    "model": {
+      "label": "Escape Notice",
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Escape_Notice.json"
+    }
+  }
+}

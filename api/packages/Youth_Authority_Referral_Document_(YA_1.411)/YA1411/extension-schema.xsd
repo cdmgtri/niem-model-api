@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 rel. 2 (http://www.altova.com) by lee (DOJ) -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/YA1411/Extension/1.0" xmlns:cadojYA1411codes="http://doj.ca.gov/niem/YA1411/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/YA1411/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\YA1411\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\YA1411\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\YA1411\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\YA1411\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/YA1411/Codes/1.0" schemaLocation="..\YA1411\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="YA1411Type">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for California DOJ IEPD Youth Authority Referal Document.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence/>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Information on Personal Identification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonDOJIdentification"/>
+					<xsd:element ref="j:PersonFBIIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Subjects Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions Start Here -->
+	<xsd:complexType name="CoOffenderType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CoOffender </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CoOffencerAge"/>
+					<xsd:element ref="cadoj:CoOffenderDisposition"/>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CYAType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CYA </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CommittmentDate"/>
+					<xsd:element ref="cadoj:CYAInmateNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="EducationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Education </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:IEPFlag"/>
+					<xsd:element ref="cadoj:CurrentGrade"/>
+					<xsd:element ref="cadoj:LastGrade"/>
+					<xsd:element ref="cadoj:LastSchoolName"/>
+					<xsd:element ref="cadoj:LastSchoolAddress"/>
+					<xsd:element ref="cadoj:LastDateAttended"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="FatherType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Father </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:ContactMeans"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="GuardianType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Guardian </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:ContactMeans"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="JuvenileType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Juvenile </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:PersonAgeMeasure"/>
+					<xsd:element ref="nc:PersonAlternateName"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+					<xsd:element ref="cadoj:CIINumber"/>
+					<xsd:element ref="nc:PersonCitizenship"/>
+					<xsd:element ref="nc:PersonEthnicity"/>
+					<xsd:element ref="nc:PersonMaritalStatusText"/>
+					<xsd:element ref="cadoj:MedicalCondition"/>
+					<xsd:element ref="cadoj:Moniker"/>
+					<xsd:element ref="nc:PersonFullName"/>
+					<xsd:element ref="nc:PersonSex"/>
+					<xsd:element ref="nc:PersonSSNIdentification"/>
+					<xsd:element ref="nc:PersonBirthLocation"/>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+					<xsd:element ref="cadoj:Education"/>
+					<xsd:element ref="cadoj:Pregnancy"/>
+					<xsd:element ref="cadoj:CYA"/>
+					<xsd:element ref="nc:DriverLicenseIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="MotherType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Mother </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="cadoj:MaidenName"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:ContactMeans"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PregnancyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Pregnancy </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PregnancyFlag"/>
+					<xsd:element ref="cadoj:MothsSinceConception"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProbationOfficerType">
+		<xsd:annotation>
+			<xsd:documentation>A data type ProbationOfficer </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SiblingType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Sibling </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:ContactMeans"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SpouceType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Spouce </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:ContactMeans"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+		<xsd:complexType name="MedicalConditionType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Medical Condition data </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:MedicalConditionDescriptionText"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions End Here -->
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="YA1411" type="cadoj:YA1411Type">
+		<xsd:annotation>
+			<xsd:documentation>Information for CDC Additional Commitment Form</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonIdentification" type="cadoj:PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification Numbers Assigned to a Person by and Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonDOJIdentification" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification DOJ Assigns to a person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes Start Here -->
+	<xsd:element name="CoOffender" type="cadoj:CoOffenderType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CoOffender</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoOffencerAge" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The age of the juvenile's co-offender involved in the most recent offense.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoOffenderDisposition" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The disposition of the juvenile's co-offender's court case (court hearing pending, CDC commitment, CYA commitment, released, etc.)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CYA" type="cadoj:CYAType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CYA</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CommittmentDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date the juvenile was committed to CYA.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CYAInmateNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The number assigned to a CYA inmate.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Education" type="cadoj:EducationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Education</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IEPFlag" type="cadojYA1411codes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>A yes/no/unknown indicator as to whether the youth has ever been placed in a special education program.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CurrentGrade" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The grade in school currently attended by the juvenile</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastGrade" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The last grade in school attended by the juvenile</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastSchoolName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the school the youth attended prior to commitment to CYA</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastSchoolAddress" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Complex element including all the required components of the address of the school the youth attended prior to commitment to CYA</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LastDateAttended" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The last date (month and year) the juvenile attended this school.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Father" type="cadoj:FatherType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Father</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Guardian" type="cadoj:GuardianType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Guardian</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Juvenile" type="cadoj:JuvenileType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Juvenile</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CIINumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The CII number assigned to identify the juvenile.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalCondition" type="cadoj:MedicalConditionType">
+		<xsd:annotation>
+			<xsd:documentation>Medical Condition Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MedicalConditionDescriptionText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Summary description of the juvenile's medical condition, including current communicable diseases, handicaps, suicidal tendencies, etc.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Moniker" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Nickname associated with gang membership.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Mother" type="cadoj:MotherType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Mother</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MaidenName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The maiden name of the youth's mother</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Pregnancy" type="cadoj:PregnancyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Pregnancy</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+		<xsd:element name="PregnancyFlag" type="cadojYA1411codes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Flag to Indicate Pregnancy</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MothsSinceConception" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The number of months since conception</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProbationOfficer" type="cadoj:ProbationOfficerType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for ProbationOfficer</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Sibling" type="cadoj:SiblingType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Sibling</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Spouce" type="cadoj:SpouceType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Spouce</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes End Here -->
+</xsd:schema>

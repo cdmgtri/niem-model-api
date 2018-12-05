@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "California Department of Corrections and Rehabilitation Detainer",
+    "summary": "The California Department of Corrections and Rehabilitation Detainer IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A California Department of Corrections and Rehabilitation Detainer is sent when the California Department of Corrections and Rehabilitation transfers a subject to the local jail when a removal order is issued by the Court and if the subject is transferred to local custody.  The Detainer is sent to the Sheriff's Department.  The California Department of Corrections and Rehabilitation Detainer contains information about the subject, warrant information, and agency information.  The California Department of Corrections and Rehabilitation Detainer is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "California_Department_of_Corrections_and_Rehabilitation_Detainer",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/California_Department_of_Corrections_and_Rehabilitation_Detainer.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/California_Department_of_Corrections_and_Rehabilitation_Detainer/versions.json",
+      "count": 1
+    }
+  }
+}

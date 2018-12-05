@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "DNA Compliance",
+    "summary": "The DNA Compliance IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A DNA Compliance is a form sent from the jail to the Court indicating that a DNA collection has been taken from a subject as detailed in a DNA Order from the Court.  The DNA Compliance contains information describing when a DNA collection has been taken, whether DNA collection was taken previously, and a signature block. The DNA Compliance is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "DNA_Compliance",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/DNA_Compliance.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/DNA_Compliance/versions.json",
+      "count": 1
+    }
+  }
+}

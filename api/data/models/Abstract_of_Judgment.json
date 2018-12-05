@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Abstract of Judgment",
+    "summary": "The Abstract of Judgment IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "An Abstract of Judgment is sent from the Court to the jail and California Department of Corrections and Rehabilitation if the Court sentences a subject to prison and if the subject is in custody and if the subject is detained pending transport.  The Abstract of Judgment contains court information, defendant information, charge information, and a signature block.  The Abstract of Judgment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Abstract_of_Judgment",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Abstract_of_Judgment.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Abstract_of_Judgment/versions.json",
+      "count": 1
+    }
+  }
+}

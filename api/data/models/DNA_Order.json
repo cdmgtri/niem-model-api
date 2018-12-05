@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "DNA Order",
+    "summary": "The DNA Order IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A DNA Order is an order sent from the Court to the jail to collect DNA from a subject.  The DNA Order contains information about a subject such as case number, booking number, state identification number, location of the DNA collection site, and signature block.  The DNA Order is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "DNA_Order",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/DNA_Order.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/DNA_Order/versions.json",
+      "count": 1
+    }
+  }
+}

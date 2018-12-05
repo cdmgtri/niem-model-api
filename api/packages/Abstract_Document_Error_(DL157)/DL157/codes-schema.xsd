@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadojaswcodes="http://doj.ca.gov/niem/AffSearchWrnt/Codes/1.0" xmlns:i="http://niem.gov/niem/appinfo/2.0" targetNamespace="http://doj.ca.gov/niem/AffSearchWrnt/Codes/1.0" version="1.0.0">
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\AffSearchWrnt\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/appinfo/2.0" schemaLocation="..\AffSearchWrnt\niem\appinfo\2.0\appinfo.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>Codes XML Schema for California Department of Justice Affidavit Search Warrant</xsd:documentation>
+		<xsd:appinfo>
+			<i:ConformantIndicator>true</i:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<!-- CODE LISTS -->
+	<xsd:simpleType name="ReasonCodeSimpleType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Stolen or embezzled property and"/>
+			<xsd:enumeration value="Property or things used as a means of committing a felony and"/>
+			<xsd:enumeration value="Property or things in the possession of a person with the intent to use it as a means of committing a pbulic offense or in the possession of another to whom he or she may have delivered it for the purpose of concealing it or preventing its being discovered and"/>
+			<xsd:enumeration value="Property or things which consist of an item or constitues evidence which tends to show that a felony has been committed, or tends to show that a particular person has dcommittted a felony and"/>
+			<xsd:enumeration value="Property that tends to show that sexual exploitation of a child, in violation of P.C. section 311.3, or posseession of matter depicting sexual conduct of person under 18 in violation of section 311.11, has occurred or is occuring and"/>
+			<xsd:enumeration value="When there is a warrant to arrest a person"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ReasonCodeType">
+		<xsd:annotation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+			<xsd:extension base="cadojaswcodes:ReasonCodeSimpleType">
+				<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+			</xsd:extension>
+		</xsd:simpleContent>
+	</xsd:complexType>
+	<!-- TEMPLATE 
+	 <xsd:simpleType name="">
+		<xsd:annotation>
+			 <xsd:documentation></xsd:documentation>
+		  <xsd:appinfo>
+			<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+		  </xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+          <xsd:enumeration value=""/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	 <xsd:complexType name="">
+		<xsd:annotation>
+		  <xsd:appinfo>
+			<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+		  </xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+		  <xsd:extension base="">
+			<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+-->
+</xsd:schema>

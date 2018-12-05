@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/EscapeNotice/1.0</URI>
+    <Name>Escape Notice</Name>
+    <Summary>The Escape Notice IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>An Escape Notice is used to notify various agencies if a subject escapes or is captured.  If a subject escapes from jail, the Sheriff notifies the Prosecutor, the Court, and the California Department of Justice.  If a Public Defender respresents a subject and the subject escapes, then the Sheriff notifies the Public Defender of the escape.  If a subject escapes while in local custory and if the subject is under the jurisdiction of the California Department of Corrections and Rehabilitation (CDCR) then the Sheriff notifies the CDCR.  If a subject escapes from the state prison the CDCR informs the Sheriff and the Law Enforcement Agency of the escape.  &#xd;
+If a subject is detained and on probation, and if the subject escapes, the Sheriff notifies the Probation Department of the escape.  &#xd;
+If a subject is captured the CDCR notifies the Sheriff and the Law Enforcement Aency of the capture.  The Escape Notice is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>08/01/2008</CreationDate>
+    <LastRevisionDate>01/30/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD EscapeNotice complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>Depending on conditions, a variety of law enforcement and criminal justice agencies are notified when a subject escapes and/or is captured.</Process>
+    <TriggeringEvent>Escape Notice Complete</TriggeringEvent>
+    <Conditions>If a subject escapes and/or is captured the Escape Notice is sent to a variety of agencies.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To inform law enforcement and criminal justice agencies of a subject's escape or capture.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

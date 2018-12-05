@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/CDC863/Extension/1.0" xmlns:cadojCDC863codes="http://doj.ca.gov/niem/CDC863/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:scr="http://niem.gov/niem/domains/screening/2.0" targetNamespace="http://doj.ca.gov/niem/CDC863/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\CDC863\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\CDC863\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\CDC863\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\CDC863\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/screening/2.0" schemaLocation="..\CDC863\niem\domains\screening\2.0\screening.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/CDC863/Codes/1.0" schemaLocation="..\CDC863\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="CDC863Type">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for Notice of Sex Offender Registration Requirement.  Quantitive synopsis of all the document information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:NoticeCompletionDate"/>
+					<xsd:element ref="cadoj:Flag1707"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DetentionType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for Detention Related Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:SupervisionType">
+				<xsd:sequence>
+					<xsd:element ref="scr:ProjectedReleaseDate"/>
+					<xsd:element ref="nc:FacilityName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="OfficialType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for the official filling out the notice</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:CDCJobTitle"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ParoleAdministratorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of a Parole Administrator</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ParoleeType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of a Parolee</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="scr:InmateNumber"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="nc:PersonBirthDate"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ParoleUnitType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of a Parole Unit</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary of Identification Information of person</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="scr:InmateNumber"/>
+					<xsd:element ref="j:PersonAFISIdentification"/>
+					<xsd:element ref="cadoj:CIINumber"/>
+					<xsd:element ref="j:PersonFBIIdentification"/>
+					<xsd:element ref="cadoj:InmateCourtID"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RecievingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of the Agency Recieving the Notice</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RegistrationRequirementType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for Requirements of Registration</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ArsonOffender"/>
+					<xsd:element ref="cadoj:DrugOffender"/>
+					<xsd:element ref="cadoj:SexOffender"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SendingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information of the Agency Sending the Notice</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="ViolentOffenseType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of information on the commitment County for a Violent Offense.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:LocationCounty" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="Flag1707" type="cadojCDC863codes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Victim 1707 Notification Requested.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ArsonOffender" type="cadojCDC863codes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether arson offender registration is required.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Case" type="nc:CaseType">
+		<xsd:annotation>
+			<xsd:documentation>The Case is used to inherit Unique identifier assigned to an individual court case..
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CIINumber" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>The unique identifier assigned by the DOJ to the person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDC863" type="cadoj:CDC863Type">
+		<xsd:annotation>
+			<xsd:documentation>An overall summary information of the Affidafit Search Warrant.  Quantitive synopsis of all the document information.
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NoticeCompletionDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>Date the official completed the notice.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Detention" type="cadoj:DetentionType">
+		<xsd:annotation>
+			<xsd:documentation>Date Document Completed.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DrugOffender" type="cadojCDC863codes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether drug offender registration is required.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CDCJobTitle" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The job title of the CDC official..</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="InmateCourtID" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A unique identifier assigned by a county agency to the person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Official" type="cadoj:OfficialType">
+		<xsd:annotation>
+			<xsd:documentation>Information about the CDC Official.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Parolee" type="cadoj:ParoleeType">
+		<xsd:annotation>
+			<xsd:documentation>Information about a Parolee.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ParoleAdministrator" type="cadoj:ParoleAdministratorType">
+		<xsd:annotation>
+			<xsd:documentation>Information about a Parole Administrator.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ParoleUnit" type="cadoj:ParoleUnitType">
+		<xsd:annotation>
+			<xsd:documentation>Information about a Parole Unit.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonIdentification" type="cadoj:PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identificaton Information assigned to a Person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RecievingAgency" type="cadoj:RecievingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Information about the Agency Recieving the Notice.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RegistrationRequirement" type="cadoj:RegistrationRequirementType">
+		<xsd:annotation>
+			<xsd:documentation>Information about the requirements for Registering for Parole Notice.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SendingAgency" type="cadoj:SendingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Information about the Agency Sending the Notice.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SexOffender" type="cadojCDC863codes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether sex offender registration is required.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+	<xsd:element name="ViolentOffense" type="cadoj:ViolentOffenseType">
+		<xsd:annotation>
+			<xsd:documentation>The commitment county for violent offense information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

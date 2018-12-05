@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Booking Intake/Personal Property Inventory",
+    "summary": "The Booking Intake/Personal Property Inventory IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Booking Intake/Personal Property Inventory is completed when a subject is taken into custody by a Law Enforcement Agency (LEA).  The LEA sends the form to the Sheriff's Office.  The LEA also sends a Probable Cause Declaration and the Intake Form to the Sheriff's Office at the time of booking.  The Booking Intake/Personal Property Inventory contains the subject's personal identifying information, arrest information, and personal property information.  The Booking Intake/Personal Property Inventory is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Booking_Intake_Personal_Property_Inventory",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Booking_Intake_Personal_Property_Inventory.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Booking_Intake_Personal_Property_Inventory/versions.json",
+      "count": 1
+    }
+  }
+}

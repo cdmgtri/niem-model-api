@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/CDCAddComm/Extension/1.0" xmlns:cadojCDCAddCommcodes="http://doj.ca.gov/niem/CDCAddComm/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:scr="http://niem.gov/niem/domains/screening/2.0" targetNamespace="http://doj.ca.gov/niem/CDCAddComm/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\CDCAddComm\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\CDCAddComm\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\CDCAddComm\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\CDCAddComm\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/screening/2.0" schemaLocation="..\CDCAddComm\niem\domains\screening\2.0\screening.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/CDCAddComm/Codes/1.0" schemaLocation="..\CDCAddComm\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+
+	<xsd:complexType name="CaseType">
+		<xsd:annotation>
+			<xsd:documentation>A data type extension to NIEM Case Type.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:CaseType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:RelatedCaseID"/>
+					<xsd:element ref="j:Charge"/>
+					<xsd:element ref="j:Sentence"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CDCAddCommType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for CDC Additional Commitment Form.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CIIRecordRequestFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:complexType name="SendingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Sending Agency Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="OfficialType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of an officials information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="j:EnforcementOfficialCategoryText" minOccurs="0"/>
+					<xsd:element ref="cadoj:Signature" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonType">
+		<xsd:annotation>
+			<xsd:documentation>A data type extension to NIEM Person Type.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:PersonType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Information on Personal Identification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonDOJIdentification"/>
+					<xsd:element ref="scr:InmateNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RecievingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Recieving Agency Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+					<xsd:element ref="nc:StructuredAddress"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Subjects Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+					<xsd:element ref="nc:Person"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="CDCAddComm" type="cadoj:CDCAddCommType">
+		<xsd:annotation>
+			<xsd:documentation>Information for CDC Additional Commitment Form</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AliasName" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>An Identification Name the is considered an Alias for the Person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CIIRecordRequestFlag" type="cadojCDCAddCommcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Yes/no indicator as to whether the agency is requesting a corrected copy of the CII record.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Official" type="cadoj:OfficialType">
+		<xsd:annotation>
+			<xsd:documentation>Information about an Official</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonIdentification" type="cadoj:PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification Numbers Assigned to a Person by and Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonDOJIdentification" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification DOJ Assigns to a person.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RecievingAgency" type="cadoj:RecievingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Recieving Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RelatedCaseID" type="niem-xsd:string">
+		<xsd:annotation>
+			<xsd:documentation>Unique identifier assigned to an individual court case.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SendingAgency" type="cadoj:SendingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Sending Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Subject" type="cadoj:SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>Information on the Subject.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

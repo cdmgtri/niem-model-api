@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/DS427/1.0</URI>
+    <Name>Notice of Priority Re-examination of Driver Form (DS427)</Name>
+    <Summary>The Notice of Priority Re-examination of Driver Form (DS427) IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>A Notice of Priority Re-examination of Driver Form (DS427) is sent from a Law Enforcement Officer to the California Department of Motor Vehicles when an Officer believes that a subject's driving privilege should be investigated.  The Officer indicates on the Notice of Priority Re-examination of Driver Form (DS427) what actions were displayed by the subject to lead the Officer to believe a re-examination of driving privilege is needed.  The Notice of Priority Re-examination of Driver Form (DS427) contains information relevant to the driver, location of occurrence, summary of actions and possible traffic law violations, and a signature block.  The Notice of Priority Re-examination of Driver Form (DS427) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>08/04/2008</CreationDate>
+    <LastRevisionDate>01/21/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD DS427 complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>A Law Enforcement Officer provides reasons why a subject's driving privilege should be investigated. The completed form is provided to the driver and to the California Department of Motor Vehicles.</Process>
+    <TriggeringEvent>Notice of Priority Re-examination of Driver Form (DS427) Complete</TriggeringEvent>
+    <Conditions>If a subject appears to be incapable of operating a motor vehicle safely and the Law Enforcement Officer has reason to request an investigation into the subject's driving privilege then the form is sent from the Officer to the California Department of Motor Vehicles.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>Provides a way for a Law Enforcement Officer to communicate with the California Department of Motor Vehicles when a subject's privilege to drive is in question.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

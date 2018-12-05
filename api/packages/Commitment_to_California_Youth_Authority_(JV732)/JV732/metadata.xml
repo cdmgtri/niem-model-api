@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/JV732/1.0</URI>
+    <Name>Commitment to California Youth Authority (JV732)</Name>
+    <Summary>The Commitment to California Youth Authority (JV732) IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>A Commitment to California Youth Authority (JV732) is a form sent from the court to the California Youth Authority when the court sentences a subject to be committed to the California Youth Authority.  The Commitment to California Youth Authority contains court information, court order and findings, signature block.  The Commitment to California Youth Authority (JV732) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>10/06/2008</CreationDate>
+    <LastRevisionDate>09/02/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD JV732 complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>The court sends the Commitment to the California Youth Authority (JV732) form when the court has sentenced a subject to be committed to the California Youth Authority.</Process>
+    <TriggeringEvent>Commitment to California Youth Authority (JV732) Complete</TriggeringEvent>
+    <Conditions>The court has sentenced a subject to be committed to the California Youth Authority.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To inform the California Youth Authority of the orders and findings of the court regarding a subject sentenced to the Youth Authority</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

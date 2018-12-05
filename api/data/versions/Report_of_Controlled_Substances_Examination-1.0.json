@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Report of Controlled Substances Examination",
+    "uri": "http://doj.ca.gov/niem/CntrlSubLabRpt/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/CntrlSubLabRpt/1.0",
+      "Name": "Report of Controlled Substances Examination",
+      "Summary": "The Report of Controlled Substances Examination IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "A Report of Controlled Substances Examination is sent from the Sheriff to the Prosecutor if the lab analyzes evidence for controlled substance related to a pending case.  The report details the lab results related to controlled substances.  The Prosecutor in turn informs the Public Defender of the lab results. .  The Report of Controlled Substances Examination contains lab information, description of the evidence, examination results, and a signature block.  The Report of Controlled Substances Examination is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "08/29/2008",
+      "LastRevisionDate": "02/03/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD CntrlSubLabRpt complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "If the lab analyzes evidence for controlled substances, the lab results are sent from the Sheriff to the Prosecutor and from the Prosecutor to the Public Defender.",
+      "TriggeringEvent": "Report of Controlled Substances Examination Complete",
+      "Conditions": "If the lab analyzes evidence for controlled substances.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "To inform the Prosecutor and Public Defender of lab results related to evidence in a pending case.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Report_of_Controlled_Substances_Examination-1.0.json",
+    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Report_of_Controlled_Substances_Examination",
+    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Report_of_Controlled_Substances_Examination.zip",
+    "model": {
+      "label": "Report of Controlled Substances Examination",
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Report_of_Controlled_Substances_Examination.json"
+    }
+  }
+}

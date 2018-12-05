@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/CDCAbstJudgem/Extension/1.0" xmlns:cadojCDCAbstJudgemcodes="http://doj.ca.gov/niem/CDCAbstJudgem/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:scr="http://niem.gov/niem/domains/screening/2.0" targetNamespace="http://doj.ca.gov/niem/CDCAbstJudgem/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\CDCAbstJudgem\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\CDCAbstJudgem\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\CDCAbstJudgem\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\CDCAbstJudgem\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/screening/2.0" schemaLocation="..\CDCAbstJudgem\niem\domains\screening\2.0\screening.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/CDCAbstJudgem/Codes/1.0" schemaLocation="..\CDCAbstJudgem\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Information on Personal Identification</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CIINumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions Start Here -->
+	<xsd:complexType name="CDCAbstJudgemType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CDCAbstJudgem </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:AbstractJudgementFiledDate"/>
+					<xsd:element ref="cadoj:AmmendedVersionFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ChargeType">
+		<xsd:annotation>
+			<xsd:documentation>An Extension for Charge Type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:ChargeType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ConvictedCountIdentifier"/>
+					<xsd:element ref="cadoj:EnhancedCountIdentifier"/>
+					<xsd:element ref="cadoj:EnhancementFindingFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ConfinementAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type ConfinementAgency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:OrganizationName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+		<xsd:complexType name="ContactInformationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for Contact Information </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:ContactTelephoneNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ConvictionType">
+		<xsd:annotation>
+			<xsd:documentation>An Extension for Conviction Type</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:ConvictionType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ConvictedByCode"/>
+					<xsd:element ref="cadoj:ConvictionDate"/>
+					<xsd:element ref="cadoj:TestingOrderFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtType">
+		<xsd:annotation>
+			<xsd:documentation>A data extension for Court Type </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:CourtType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:CourtDepartmentName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtAppearanceType">
+		<xsd:annotation>
+			<xsd:documentation>A data extension for CourtAppearance Type </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:CourtAppearanceType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:DefendentNotPresentAtHearingFlag"/>
+					<xsd:element ref="cadoj:DefenseAttorneyAppointedFlag"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtReporterType">
+		<xsd:annotation>
+			<xsd:documentation>A data type CourtReporter </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DefenseAttorneyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DefenseAttorney </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DeputyClerkType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DeputyClerk </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:Signature"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DNACertifyingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DNACertifyingAgency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:OrganizationName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DNACertifyingPersonType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DNACertifyingPerson </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:DNACertifyingPersonTitle"/>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:Signature"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DNAOrderType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DNAOrder </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:DNAOrderDueDate"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="FilingClerkType">
+		<xsd:annotation>
+			<xsd:documentation>A data type FilingClerk </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:Signature"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProbationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Probation  </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:ProbationChemicalDetectionTestFlag"/>
+					<xsd:element ref="cadoj:ProbationFileNumber"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProbationOfficerType">
+		<xsd:annotation>
+			<xsd:documentation>A data type ProbationOfficer </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="ProsecutorType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Prosecutor </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:ProsecutorTitle"/>
+					<xsd:element ref="cadoj:ContactInformation"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RemandType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Remand </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:RemandDate"/>
+					<xsd:element ref="cadoj:RemandLocation"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="RestitutionType">
+		<xsd:annotation>
+			<xsd:documentation>A data type Restitution </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:RestitutionAmountOrdered"/>
+					<xsd:element ref="cadoj:RestitutionAmountSuspended"/>
+					<xsd:element ref="cadoj:RestitutionIntrestRate"/>
+					<xsd:element ref="cadoj:StateRestitutionOrderAmount"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SentenceType">
+		<xsd:annotation>
+			<xsd:documentation>A data extension for Sentence Type </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:SentenceType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:LabFees"/>
+					<xsd:element ref="cadoj:ProbationOrderText"/>
+					<xsd:element ref="cadoj:SentenceConcurrentWithText"/>
+					<xsd:element ref="scr:SentenceDate"/>
+					<xsd:element ref="cadoj:SentencedWithTwoStrikeStatusFlag"/>
+					<xsd:element ref="cadoj:TermCode"/>
+					<xsd:element ref="cadoj:TotalTimeImposed"/>
+					<xsd:element ref="cadoj:WhenSentenceWasImposed"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SentenceModificationType">
+		<xsd:annotation>
+			<xsd:documentation>A data extenstion for SentenceModification Type </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:SentenceModificationType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:DaysServedCreditFlag"/>
+					<xsd:element ref="cadoj:LocalCredit "/>
+					<xsd:element ref="cadoj:SentenceCreditTotal"/>
+					<xsd:element ref="cadoj:StateCredit"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data extenstion for Subject Type </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:SentenceModificationType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:PersonIdentification"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions End Here -->
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="PersonIdentification" type="cadoj:PersonIdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>Identification Numbers Assigned to a Person by and Agency Information.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CIINumber" type="nc:IdentificationType">
+		<xsd:annotation>
+			<xsd:documentation>The defendant's CII number</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>Date of signiture.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes Start Here -->
+	<xsd:element name="CDCAbstJudgem" type="cadoj:CDCAbstJudgemType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CDCAbstJudgem</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AbstractJudgementFiledDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the Abstract of Judgment Prison Commitment was filed </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AmmendedVersionFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>An indicator that the Abstract of Judgment Prison Commitment is an amended version</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Charge" type="cadoj:ChargeType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Charge</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConvictedCountIdentifier" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The original count of conviction on the complaint.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EnhancedCountIdentifier" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The original count of enhancement on the complaint.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EnhancementFindingFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>An indicator (yes or no) that the enhancement charge was found to be true.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConfinementAgency" type="cadoj:ConfinementAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for ConfinementAgency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OrganizationName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Identification number of the agency where the confinement sentence will be served.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ContactInformation" type="cadoj:ContactInformationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation for Contact Information</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Conviction " type="cadoj:ConvictionType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Conviction </xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConvictedByCode" type="cadojCDCAbstJudgemcodes:ConvictedByCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Whether the defendant was convicted by jury, court or plea</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ConvictionDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the defendant was convicted of the charge</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TestingOrderFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>The statute under which DNA or AIDS testing is ordered as part of a defendant's sentence.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Court" type="cadoj:CourtType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Court</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtDepartmentName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the court department.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtAppearance" type="cadoj:CourtAppearanceType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CourtAppearance</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DefendentNotPresentAtHearingFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>An indicator that the defendant was not present in court at the hearing.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DefenseAttorneyAppointedFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>An indicator that the defense attorney was appointed by the court.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtReporter" type="cadoj:CourtReporterType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for CourtReporter</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Complex element contains all of the required components of the name of the  court reporter</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DefenseAttorney" type="cadoj:DefenseAttorneyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DefenseAttorney</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DeputyClerk" type="cadoj:DeputyClerkType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DeputyClerk</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNACertifyingAgency" type="cadoj:DNACertifyingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DNACertifyingAgency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNACertifyingPerson" type="cadoj:DNACertifyingPersonType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DNACertifyingPerson</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNACertifyingPersonTitle" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The title or rank of the person swearing to the actions of the defendant with respect to the court's DNA order</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNAOrder" type="cadoj:DNAOrderType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DNAOrder</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNAOrderDueDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the sheriff is ordered to return the executed JUS PC 296 (DNA Specimen card) to the court</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FilingClerk" type="cadoj:FilingClerkType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for FilingClerk</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Probation" type="cadoj:ProbationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Probation</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProbationFileNumber" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>File number used by the probation department.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProbationChemicalDetectionTestFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether breath, blood, or urine testing is required under the probation conditions.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProbationOfficer" type="cadoj:ProbationOfficerType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for ProbationOfficer</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Prosecutor" type="cadoj:ProsecutorType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Prosecutor</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProsecutorTitle" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>Code describing the formal title of a prosecutor (e.g. deputy district attorney).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Remand" type="cadoj:RemandType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Remand</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RemandDate" type="nc:DateType">
+		<xsd:annotation>
+			<xsd:documentation>The date the defendant is remanded to custody.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RemandLocation" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The location to which the defendant is to be remanded.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Restitution" type="cadoj:RestitutionType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for Restitution</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RestitutionAmountOrdered" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The total amount of the restitution to be paid to all victim(s) per the victim restitution order of the court.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RestitutionAmountSuspended" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The amount of restitution that is suspended unless probation is revoked.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="RestitutionIntrestRate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The interest rate that applies to the restitution owed the victim(s).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StateRestitutionOrderAmount" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The dollar amount of the state restitution fine ordered.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LabFees" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The dollar amount of lab fee imposed as part of a defendant's sentence</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ProbationOrderText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A text description of order to probation for post-sentence report.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SentenceConcurrentWithText" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A text description of the case and/or counts for which this sentence is to run concurrently.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SentencedWithTwoStrikeStatusFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Defendant was sentenced pursuant to a two-strikes statute</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TermCode" type="cadojCDCAbstJudgemcodes:TermCodeType">
+		<xsd:annotation>
+			<xsd:documentation>Lower, mitigating, or upper sentence term (L, M, or U).</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TotalTimeImposed" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>A numeric value of the grand total of all time imposed from this court order.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="WhenSentenceWasImposed" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>When the execution of Sentence was imposed (at initial sentencing hearing, at recommencing after appeal, after revocation of probation, at recommencing per recall of commitment, or other)</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SentenceModification" type="cadoj:SentenceModificationType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for SentenceModification</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DaysServedCreditFlag" type="cadojCDCAbstJudgemcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>Indicates whether any days served preceding the sentence will be applied to the sentence duration.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="LocalCredit " type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The amount of time spent in local custody that is to be credited to the defendant's sentence</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SentenceCreditTotal" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The amount of time spent in custody that is to be credited to the defendant's sentence</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StateCredit" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The amount of time spent in State custody that is to be credited to the defendant's sentence</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes End Here -->
+</xsd:schema>

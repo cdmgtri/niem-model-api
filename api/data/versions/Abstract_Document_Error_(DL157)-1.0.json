@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-version-schema.json",
+  "data": {
+    "version": "1.0",
+    "baseNIEM": "2.0",
+    "modelName": "Abstract/Document Error (DL157)",
+    "uri": "http://doj.ca.gov/niem/DL157/1.0",
+    "more": {
+      "URI": "http://doj.ca.gov/niem/DL157/1.0",
+      "Name": "Abstract/Document Error (DL157)",
+      "Summary": "The Abstract/Document Error (DL157) IEPD was developed for the California Department of Justice - Data Exchange Project.",
+      "Description": "An Abstract/Document Error (DL157) is a form sent from the California Superior Court to the California Department of Motor Vehicles when the court has placed an abstract on an incorrect driving record.  The Department of Motor Vehicles will update their records with the correct information.  The Abstract/Document Error (DL157) contains citation information, driving record information for removal of citation information, signature block.  The Abstract/Document Error (DL157) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+      "Version": "1.0",
+      "CreationDate": "07/14/2008",
+      "LastRevisionDate": "01/21/2009",
+      "NIEMVersion": "2.0",
+      "Security": "Public",
+      "Maturity": "2",
+      "Status": "IEPD DL157 complete and ready for implementation",
+      "Domain": "Justice",
+      "ExchangePartners": "California state and local criminal justice agencies",
+      "Process": "The California Superior Court informs the California Department of Motor Vehicles if a reportable charge is placed on an incorrect driving record.",
+      "TriggeringEvent": "Abstract/Document Error (DL157) Complete",
+      "Conditions": "If a reportable charge is placed on an incorrect driving record then the Abstract/Document Error (DL157) form is used to inform the California Department of Motor Vehicles.",
+      "Sponsors": "California Department of Justice and other California state and local criminal justice agencies - see master documentation",
+      "Purpose": "Provides a way for the California Superior Court to communicate with the California Department of Motor Vehicles when a reportable charge is placed on an incorrect driving record.",
+      "MessageExchangePatterns": "document",
+      "ExchangePartnerCategories": "California state and local criminal justice agencies"
+    }
+  },
+  "links": {
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Abstract_Document_Error_(DL157)-1.0.json",
+    "folder": "https://github.com/cdmgtri/niem-model-api/api/packages/Abstract_Document_Error_(DL157)",
+    "zip": "https://github.com/cdmgtri/niem-model-api/api/zips/Abstract_Document_Error_(DL157).zip",
+    "model": {
+      "label": "Abstract/Document Error (DL157)",
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Abstract_Document_Error_(DL157).json"
+    }
+  }
+}

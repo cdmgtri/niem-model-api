@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Medical/Mental Health Transfer Summary",
+    "summary": "The Medical/Mental Health Transfer Summary IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Medical/Mental Health Transfer Summary details medical data about a subject.  The data is sent from the jail to the California Department of Corrections and Rehabilitation reception center if a subject is transferred from local custody to the jurisdiction of the California Department of Corrections and Rehabilitation.  The Medical/Mental Health Transfer Summary contains information pertaining to the subject, medications, and other medical history information.  The Medical/Mental Health Transfer Summary is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Medical_Mental_Health_Transfer_Summary",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Medical_Mental_Health_Transfer_Summary.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Medical_Mental_Health_Transfer_Summary/versions.json",
+      "count": 1
+    }
+  }
+}

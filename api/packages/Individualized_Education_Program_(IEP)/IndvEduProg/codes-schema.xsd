@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadojIndvEduProgcodes="http://doj.ca.gov/niem/IndvEduProg/Codes/1.0" xmlns:i="http://niem.gov/niem/appinfo/2.0" targetNamespace="http://doj.ca.gov/niem/IndvEduProg/Codes/1.0" version="1.0.0">
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\IndvEduProg\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/appinfo/2.0" schemaLocation="..\IndvEduProg\niem\appinfo\2.0\appinfo.xsd"/>
+	<xsd:annotation>
+		<xsd:documentation>Codes XML Schema for Califonia Department of Corrections</xsd:documentation>
+		<xsd:appinfo>
+			<i:ConformantIndicator>true</i:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<!-- CODE LISTS -->
+	<xsd:simpleType name="YesNoType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Yes"/>
+			<xsd:enumeration value="No"/>
+			<xsd:enumeration value="Unknown"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PrimaryDisabilityType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Autism"/>
+			<xsd:enumeration value="Hard of Hearing"/>
+			<xsd:enumeration value="Deaf"/>
+			<xsd:enumeration value="Deaf and Blind"/>
+			<xsd:enumeration value="Visualy Impared"/>
+			<xsd:enumeration value="Emotiaonal Disturbance"/>
+			<xsd:enumeration value="Established Medical Disability"/>
+			<xsd:enumeration value="Orthopedic Impairment"/>
+			<xsd:enumeration value="Specific Learning Disability"/>
+			<xsd:enumeration value="Specific Language Impaired"/>
+			<xsd:enumeration value="Other Health Impaired"/>
+			<xsd:enumeration value="Multiple Disabilities"/>
+			<xsd:enumeration value="Traumatic Brain Injury"/>
+			<xsd:enumeration value="Mental Retardation"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DisabilitySeverityType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Severe"/>
+			<xsd:enumeration value="Non-Severe"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PhysicalEducationType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="General Phys Ed."/>
+			<xsd:enumeration value="Modified Gen. P.E."/>
+			<xsd:enumeration value="Specially Designed"/>
+			<xsd:enumeration value="Adapted P.E."/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="IEPMeetingPurposeType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Initial IEP"/>
+			<xsd:enumeration value="Annual Review"/>
+			<xsd:enumeration value="Triennial"/>
+			<xsd:enumeration value="Transition"/>
+			<xsd:enumeration value="Exit"/>
+			<xsd:enumeration value="Other"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="EducationPlanType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="IEP"/>
+			<xsd:enumeration value="IFSP"/>
+			<xsd:enumeration value="ISP"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ResidencyType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="Parent/Guardian"/>
+			<xsd:enumeration value="Foster Home"/>
+			<xsd:enumeration value="Licensed Children's Institution"/>
+			<xsd:enumeration value="Other"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+		<xsd:simpleType name="AgencyServiceType">
+		<xsd:annotation>
+			<xsd:documentation/>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:enumeration value="CA Child Services"/>
+			<xsd:enumeration value="County Mental Health"/>
+			<xsd:enumeration value="Dept of Rehab"/>
+			<xsd:enumeration value="Regional Center"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<!-- TEMPLATE 
+	 <xsd:simpleType name="">
+		<xsd:annotation>
+			 <xsd:documentation></xsd:documentation>
+		  <xsd:appinfo>
+			<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+		  </xsd:appinfo>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+          <xsd:enumeration value=""/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	 <xsd:complexType name="">
+		<xsd:annotation>
+		  <xsd:appinfo>
+			<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+		  </xsd:appinfo>
+		</xsd:annotation>
+		<xsd:simpleContent>
+		  <xsd:extension base="">
+			<xsd:attributeGroup ref="s:SimpleObjectAttributeGroup"/>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+-->
+</xsd:schema>

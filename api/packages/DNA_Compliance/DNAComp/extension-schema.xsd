@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cadoj="http://doj.ca.gov/niem/DNAComp/Extension/1.0" xmlns:cadojDNACompcodes="http://doj.ca.gov/niem/DNAComp/Codes/1.0" xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:niem-xsd="http://niem.gov/niem/proxy/xsd/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" targetNamespace="http://doj.ca.gov/niem/DNAComp/Extension/1.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1">
+	<!-- Import namespaces -->
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="..\DNAComp\niem\structures\2.0\structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="..\DNAComp\niem\niem-core\2.0\niem-core.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/proxy/xsd/2.0" schemaLocation="..\DNAComp\niem\proxy\xsd\2.0\xsd.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/domains/jxdm/4.0" schemaLocation="..\DNAComp\niem\domains\jxdm\4.0\jxdm.xsd"/>
+	<xsd:import namespace="http://doj.ca.gov/niem/DNAComp/Codes/1.0" schemaLocation="..\DNAComp\codes-schema.xsd"/>
+	<!-- Type definitions for Extensions -->
+	<xsd:complexType name="SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the collection of signature artifacts.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonDigitizedSignatureImage" minOccurs="0"/>
+					<xsd:element ref="cadoj:SignatureDate" minOccurs="0"/>
+					<xsd:element ref="nc:PersonFullName" minOccurs="0"/>
+					<xsd:element ref="j:CourtOrderSignatureMethodText" minOccurs="0"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CourtType">
+		<xsd:annotation>
+			<xsd:documentation>A data type extension for Court Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:CourtType">
+				<xsd:sequence>
+					<xsd:element ref="nc:Address"/>
+					<xsd:element ref="cadoj:CourtDepartmentName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="SubjectType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for the Subjects Information</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="j:SubjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:Signature"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions Start Here -->
+	<xsd:complexType name="DNACertifyingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DNACertifyingAgency </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:OrganizationName"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DNACertifyingPersonType">
+		<xsd:annotation>
+			<xsd:documentation>A data type DNACertifyingPerson </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="nc:PersonName"/>
+					<xsd:element ref="cadoj:DNACertifyingPersonTitle"/>
+					<xsd:element ref="cadoj:Signature"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="DNACompType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for overall summary information for California DOJ IEPD DNA Compliance. </xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="cadoj:VoluntaryComplianceFlag"/>
+					<xsd:element ref="cadoj:ComplianceActionDate"/>
+					<xsd:element ref="cadoj:ComplianceActionCode"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- Generated IEPD Type Extensions End Here -->
+	<!-- Global Element Deffinitions -->
+	<xsd:element name="Signature" type="cadoj:SignatureType">
+		<xsd:annotation>
+			<xsd:documentation>Artifacts of a signature.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SignatureDate" type="niem-xsd:dateTime">
+		<xsd:annotation>
+			<xsd:documentation>The date of the signature of the person swearing to the actions of the defendant with respect to the court's DNA order.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes Start Here -->
+	<xsd:element name="CourtDepartmentName" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The name of the court department.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNACertifyingAgency" type="cadoj:DNACertifyingAgencyType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DNACertifyingAgency</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNACertifyingPerson" type="cadoj:DNACertifyingPersonType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DNACertifyingPerson</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNACertifyingPersonTitle" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The title or rank of the person swearing to the actions of the defendant with respect to the court's DNA order</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DNAComp" type="cadoj:DNACompType">
+		<xsd:annotation>
+			<xsd:documentation>Instantiation of Information for DNAComp</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="VoluntaryComplianceFlag" type="cadojDNACompcodes:YesNoType">
+		<xsd:annotation>
+			<xsd:documentation>An indicator as to whether or not the defendant voluntarily complied with the DNA order.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ComplianceActionDate" type="nc:TextType">
+		<xsd:annotation>
+			<xsd:documentation>The date of the defendant's action with respect to providing a court-ordered DNA sample</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ComplianceActionCode" type="cadojDNACompcodes:ComplianceActionCodeType">
+		<xsd:annotation>
+			<xsd:documentation>The action of the defendant with respect to the court order for a DNA sample:  complied , failed to comply , refused to comply or a records check indicated that the defendant had already complied with PC 296</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- Generated IEPD Attributes End Here -->
+</xsd:schema>

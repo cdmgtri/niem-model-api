@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Metadata>
+    <URI>http://doj.ca.gov/niem/IndvEduProg/1.0</URI>
+    <Name>Individualized Education Program (IEP)</Name>
+    <Summary>The Individualized Education Program (IEP) IEPD was developed for the California Department of Justice - Data Exchange Project.</Summary>
+    <Description>An Individualized Education Program (IEP) is a form provided to the Youth Authority by the Probation Department when the court commits a juvenile to the Youth Authority.  The Individualized Education Program (IEP) contains personal identifying information about the juvenile, family relations, educational history, physical data, and state assessment.  The Individualized Education Program (IEP) is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.</Description>
+    <Version>1.0</Version>
+    <URL/>
+    <CreationDate>10/06/2008</CreationDate>
+    <LastRevisionDate>09/02/2009</LastRevisionDate>
+    <NextRevisionDate/>
+    <NIEMVersion>2.0</NIEMVersion>
+    <Security>Public</Security>
+    <Maturity>2</Maturity>
+    <Status>IEPD IndvEduProg complete and ready for implementation</Status>
+    <Schedule/>
+    <Lineage/>
+    <Relationships/>
+    <Keywords/>
+    <Domain>Justice</Domain>
+    <ExchangePartners>California state and local criminal justice agencies</ExchangePartners>
+    <Process>The form is provided by the Probation Department to the Youth Authority when a juvenile is transferred from the Probation Department to the Youth Authority.</Process>
+    <TriggeringEvent>Individualized Education Program (IEP) Complete</TriggeringEvent>
+    <Conditions>If the court commits a juvenile to the Youth Authority, then the form is provided by the Probation Department to the Youth Authority.</Conditions>
+    <Endorsements/>
+    <Sponsors>California Department of Justice and other California state and local criminal justice agencies - see master documentation</Sponsors>
+    <Purpose>To provide identifying information about the juvenile, educational history, and state assessment.</Purpose>
+    <MessageExchangePatterns>document</MessageExchangePatterns>
+    <CommunicationsEnvironment/>
+    <ExchangePartnerCategories>California state and local criminal justice agencies</ExchangePartnerCategories>
+    <AuthoritativeSource>
+        <Category/>
+        <Organization>
+            <Name>California Department of Justice</Name>
+            <Address1>4949 Broadway</Address1>
+            <Address2/>
+            <City>Sacramento</City>
+            <State>CA</State>
+            <Zip>95820</Zip>
+            <Country>United States</Country>
+            <URL>(URL)</URL>
+        </Organization>
+        <PointOfContact>
+            <Name>Business Services Program</Name>
+            <Address1/>
+            <Address2/>
+            <City/>
+            <State/>
+            <Zip/>
+            <Country/>
+            <Phone>(916) 227-4566</Phone>
+            <Fax/>
+            <Email>DataExchange@doj.ca.gov</Email>
+        </PointOfContact>
+    </AuthoritativeSource>
+</Metadata>

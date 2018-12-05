@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<w:WantList w:release="2.0" w:product="NIEM" xmlns:w="http://niem.gov/niem/wantlist/1">
+  <w:Element w:prefix="j" w:name="ChargeText" w:isReference="false"/>
+  <w:Element w:prefix="j"
+    w:name="DrivingJurisdictionAuthorityANSID20Code" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="PersonFBIIdentification" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="Subject" w:isReference="false"/>
+  <w:Element w:prefix="j" w:name="Warrant" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="ContactInformation" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="ContactMeans" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="ContactTelephoneNumber" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="DriverLicenseIdentification" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="EntityPerson" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="EntityRepresentation" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="Organization" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonEyeColorCode" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonHairColorCode" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonOtherIdentification" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonRaceCode" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonSex" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="PersonSexCode" w:isReference="false"/>
+  <w:Element w:prefix="nc" w:name="RoleOfPerson" w:isReference="true"/>
+  <w:Element w:prefix="nc" w:name="SourceContactPersonText" w:isReference="false"/>
+  <w:Element w:prefix="scr" w:name="PersonPhysicalMarkingAugmentation" w:isReference="false"/>
+  <w:Element w:prefix="scr" w:name="WarrantIdentification" w:isReference="false"/>
+  <w:Type w:prefix="j" w:name="BailType" w:isRequested="false">
+    <w:ElementInType w:prefix="j" w:name="BailSetAmount" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="j" w:name="SubjectType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="RoleOfPerson" w:isReference="true"/>
+  </w:Type>
+  <w:Type w:prefix="j" w:name="WarrantType" w:isRequested="false">
+    <w:ElementInType w:prefix="j" w:name="WarrantAppearanceBail" w:isReference="false"/>
+    <w:ElementInType w:prefix="j" w:name="WarrantLevelText" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="ContactInformationType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="ContactEntity" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="ContactMeans" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="EntityType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="EntityRepresentation" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="IdentificationType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="IdentificationID" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="IdentificationJurisdiction" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="LengthMeasureType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="LengthUnitCode" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="OrganizationType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="OrganizationDescriptionText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="OrganizationName" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="PersonNameType" w:isRequested="false">
+    <w:AttributeInType w:prefix="nc" w:name="personNameCommentText"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonFullName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonGivenName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonMaidenName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonMiddleName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonNamePrefixText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonNameSuffixText" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonSurName" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="PersonType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="PersonBirthDate" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonEyeColor" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonHairColor" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonHeightMeasure" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonName" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonRace" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonSex" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonStateIdentification" w:isReference="false"/>
+    <w:ElementInType w:prefix="nc" w:name="PersonWeightMeasure" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="nc" w:name="WeightMeasureType" w:isRequested="false">
+    <w:ElementInType w:prefix="nc" w:name="WeightUnitCode" w:isReference="false"/>
+  </w:Type>
+  <w:Type w:prefix="scr" w:name="PersonPhysicalMarkingAugmentationType" w:isRequested="false">
+    <w:ElementInType w:prefix="scr" w:name="PersonPhysicalMarkingID" w:isReference="false"/>
+  </w:Type>
+</w:WantList>

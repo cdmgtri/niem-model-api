@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "Subpoena-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Subpoena-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Subpoena",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Subpoena.zip",
     "model": {
+      "id": "Subpoena",
       "label": "Subpoena",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Subpoena.json"
     }

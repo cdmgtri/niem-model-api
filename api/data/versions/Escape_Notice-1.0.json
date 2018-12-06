@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "Escape_Notice-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Escape_Notice-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Escape_Notice",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Escape_Notice.zip",
     "model": {
+      "id": "Escape_Notice",
       "label": "Escape Notice",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Escape_Notice.json"
     }

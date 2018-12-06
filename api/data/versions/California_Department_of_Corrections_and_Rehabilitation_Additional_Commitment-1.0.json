@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment.zip",
     "model": {
+      "id": "California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment",
       "label": "California Department of Corrections and Rehabilitation Additional Commitment",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment.json"
     }

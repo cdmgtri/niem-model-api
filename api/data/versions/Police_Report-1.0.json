@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "Police_Report-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Police_Report-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Police_Report",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Police_Report.zip",
     "model": {
+      "id": "Police_Report",
       "label": "Police Report",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Police_Report.json"
     }

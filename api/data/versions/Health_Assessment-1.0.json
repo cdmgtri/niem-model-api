@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "Health_Assessment-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Health_Assessment-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Health_Assessment",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Health_Assessment.zip",
     "model": {
+      "id": "Health_Assessment",
       "label": "Health Assessment",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Health_Assessment.json"
     }

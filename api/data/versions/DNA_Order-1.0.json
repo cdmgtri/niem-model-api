@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "DNA_Order-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/DNA_Order-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/DNA_Order",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/DNA_Order.zip",
     "model": {
+      "id": "DNA_Order",
       "label": "DNA Order",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/DNA_Order.json"
     }

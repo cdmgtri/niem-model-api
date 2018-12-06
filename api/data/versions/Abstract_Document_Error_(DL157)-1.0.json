@@ -29,10 +29,12 @@
     }
   },
   "links": {
+    "id": "Abstract_Document_Error_(DL157)-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Abstract_Document_Error_(DL157)-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Abstract_Document_Error_(DL157)",
     "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Abstract_Document_Error_(DL157).zip",
     "model": {
+      "id": "Abstract_Document_Error_(DL157)",
       "label": "Abstract/Document Error (DL157)",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Abstract_Document_Error_(DL157).json"
     }

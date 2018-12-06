@@ -16,14 +16,14 @@ function process(model, zipFileName) {
 
   let modelID = zipFileName.replace(".zip", "");
 
-  loadModelData(model, modelID);
+  let modelResponse = loadModelData(model, modelID);
 
   model.versions.forEach( version => {
 
     let versionID = modelID + "-" + version.version;
-    loadVersionData(modelID, version, versionID);
+    let versionResponse = loadVersionData(modelID, version, versionID);
 
-    Resources.pushSearchCollection(model, version);
+    Resources.pushSearchCollection(model, versionResponse);
   });
 
 }
@@ -57,6 +57,7 @@ function loadModelData(model, modelID) {
   delete modelResponse.data.versions;
 
   Resources.push("models", modelResponse, modelID);
+  return modelResponse;
 }
 
 /**
@@ -76,10 +77,12 @@ function loadVersionData(modelID, version, versionID) {
   let versionResponse = {
     data,
     links: {
+      id: versionID,
       href: Resources.resourceURL("versions", versionID),
       folder: Resources.packageFolder(modelID),
       zip: Resources.zipFolder(modelID),
       model: {
+        id: modelID,
         label: version.modelName,
         href: Resources.resourceURL("models", modelID)
       }
@@ -87,6 +90,7 @@ function loadVersionData(modelID, version, versionID) {
   };
 
   Resources.push("versions", versionResponse, versionID);
+  return versionResponse;
 }
 
 module.exports = process;

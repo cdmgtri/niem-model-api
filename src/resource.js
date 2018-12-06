@@ -34,9 +34,9 @@ class Resources {
    * so searches can be run locally.
    *
    * @param {NIEMModel} model
-   * @param {NIEMVersion} version
+   * @param {NIEMVersionResponse} versionResponse
    */
-  static pushSearchCollection(model, version) {
+  static pushSearchCollection(model, versionResponse) {
 
     /** @type {NIEMModel[]} */
     let search = [];
@@ -50,18 +50,10 @@ class Resources {
       // No data loaded yet; search variable already assigned as backup
     }
 
-    // Look for the given model in the search collection
-    let foundModel = search.find( collectionModel => collectionModel.name === model.name );
-
-    if (foundModel) {
-      // Add the given version to the existing model
-      foundModel.versions.push(version);
-    }
-    else {
-      // Add the given model and attach its version
-      let i = search.push(model) - 1;
-      search[i].versions = [version];
-    }
+    // Add the given versionResponse and attach its model
+    let i = search.push(versionResponse) - 1;
+    search[i].model = model;
+    delete search[i].model.versions;
 
     fs.outputJSONSync(searchPath, search, {spaces: 2});
   }

@@ -32,7 +32,7 @@
     "id": "Report_of_Controlled_Substances_Examination-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Report_of_Controlled_Substances_Examination-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Report_of_Controlled_Substances_Examination",
-    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Report_of_Controlled_Substances_Examination.zip",
+    "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Report_of_Controlled_Substances_Examination.zip",
     "model": {
       "id": "Report_of_Controlled_Substances_Examination",
       "label": "Report of Controlled Substances Examination",

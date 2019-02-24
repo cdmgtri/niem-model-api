@@ -32,7 +32,7 @@
     "id": "Notice_of_Parole_Hearing-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Notice_of_Parole_Hearing-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Notice_of_Parole_Hearing",
-    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Notice_of_Parole_Hearing.zip",
+    "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Notice_of_Parole_Hearing.zip",
     "model": {
       "id": "Notice_of_Parole_Hearing",
       "label": "Notice of Parole Hearing",

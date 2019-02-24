@@ -32,7 +32,7 @@
     "id": "Youth_Authority_Referral_Document_(YA_1.411)-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Youth_Authority_Referral_Document_(YA_1.411)-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Youth_Authority_Referral_Document_(YA_1.411)",
-    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Youth_Authority_Referral_Document_(YA_1.411).zip",
+    "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Youth_Authority_Referral_Document_(YA_1.411).zip",
     "model": {
       "id": "Youth_Authority_Referral_Document_(YA_1.411)",
       "label": "Youth Authority Referral Document (YA 1.411)",

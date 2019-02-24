@@ -32,7 +32,7 @@
     "id": "Abstract_of_Judgment-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Abstract_of_Judgment-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Abstract_of_Judgment",
-    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Abstract_of_Judgment.zip",
+    "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Abstract_of_Judgment.zip",
     "model": {
       "id": "Abstract_of_Judgment",
       "label": "Abstract of Judgment",

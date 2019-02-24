@@ -100,7 +100,7 @@ class Resources {
    * @returns {string}
    */
   static zipFolder(versionID) {
-    return RENDERED_URL + "api/zips/" + versionID + ".zip";
+    return RENDERED_URL.replace("tree", "raw") + "api/zips/" + versionID + ".zip";
   }
 
 }

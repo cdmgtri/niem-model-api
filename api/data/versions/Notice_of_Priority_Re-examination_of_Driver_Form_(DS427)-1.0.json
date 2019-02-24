@@ -32,7 +32,7 @@
     "id": "Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)",
-    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427).zip",
+    "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427).zip",
     "model": {
       "id": "Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)",
       "label": "Notice of Priority Re-examination of Driver Form (DS427)",

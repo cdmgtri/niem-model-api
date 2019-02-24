@@ -32,7 +32,7 @@
       "id": "Abstract_Document_Error_(DL157)-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Abstract_Document_Error_(DL157)-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Abstract_Document_Error_(DL157)",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Abstract_Document_Error_(DL157).zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Abstract_Document_Error_(DL157).zip",
       "model": {
         "id": "Abstract_Document_Error_(DL157)",
         "label": "Abstract/Document Error (DL157)",
@@ -81,7 +81,7 @@
       "id": "Abstract_of_Judgment-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Abstract_of_Judgment-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Abstract_of_Judgment",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Abstract_of_Judgment.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Abstract_of_Judgment.zip",
       "model": {
         "id": "Abstract_of_Judgment",
         "label": "Abstract of Judgment",
@@ -130,7 +130,7 @@
       "id": "Booking_Intake_Personal_Property_Inventory-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Booking_Intake_Personal_Property_Inventory-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Booking_Intake_Personal_Property_Inventory",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Booking_Intake_Personal_Property_Inventory.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Booking_Intake_Personal_Property_Inventory.zip",
       "model": {
         "id": "Booking_Intake_Personal_Property_Inventory",
         "label": "Booking Intake/Personal Property Inventory",
@@ -179,7 +179,7 @@
       "id": "California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment.zip",
       "model": {
         "id": "California_Department_of_Corrections_and_Rehabilitation_Additional_Commitment",
         "label": "California Department of Corrections and Rehabilitation Additional Commitment",
@@ -228,7 +228,7 @@
       "id": "California_Department_of_Corrections_and_Rehabilitation_Detainer-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/California_Department_of_Corrections_and_Rehabilitation_Detainer-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/California_Department_of_Corrections_and_Rehabilitation_Detainer",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/California_Department_of_Corrections_and_Rehabilitation_Detainer.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/California_Department_of_Corrections_and_Rehabilitation_Detainer.zip",
       "model": {
         "id": "California_Department_of_Corrections_and_Rehabilitation_Detainer",
         "label": "California Department of Corrections and Rehabilitation Detainer",
@@ -277,7 +277,7 @@
       "id": "Commitment_to_California_Youth_Authority_(JV732)-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Commitment_to_California_Youth_Authority_(JV732)-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Commitment_to_California_Youth_Authority_(JV732)",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Commitment_to_California_Youth_Authority_(JV732).zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Commitment_to_California_Youth_Authority_(JV732).zip",
       "model": {
         "id": "Commitment_to_California_Youth_Authority_(JV732)",
         "label": "Commitment to California Youth Authority (JV732)",
@@ -326,7 +326,7 @@
       "id": "DNA_Compliance-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/DNA_Compliance-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/DNA_Compliance",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/DNA_Compliance.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/DNA_Compliance.zip",
       "model": {
         "id": "DNA_Compliance",
         "label": "DNA Compliance",
@@ -375,7 +375,7 @@
       "id": "DNA_Order-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/DNA_Order-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/DNA_Order",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/DNA_Order.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/DNA_Order.zip",
       "model": {
         "id": "DNA_Order",
         "label": "DNA Order",
@@ -424,7 +424,7 @@
       "id": "Escape_Notice-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Escape_Notice-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Escape_Notice",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Escape_Notice.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Escape_Notice.zip",
       "model": {
         "id": "Escape_Notice",
         "label": "Escape Notice",
@@ -473,7 +473,7 @@
       "id": "Health_Assessment-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Health_Assessment-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Health_Assessment",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Health_Assessment.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Health_Assessment.zip",
       "model": {
         "id": "Health_Assessment",
         "label": "Health Assessment",
@@ -522,7 +522,7 @@
       "id": "Individualized_Education_Program_(IEP)-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Individualized_Education_Program_(IEP)-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Individualized_Education_Program_(IEP)",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Individualized_Education_Program_(IEP).zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Individualized_Education_Program_(IEP).zip",
       "model": {
         "id": "Individualized_Education_Program_(IEP)",
         "label": "Individualized Education Program (IEP)",
@@ -571,7 +571,7 @@
       "id": "Medical_Mental_Health_Transfer_Summary-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Medical_Mental_Health_Transfer_Summary-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Medical_Mental_Health_Transfer_Summary",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Medical_Mental_Health_Transfer_Summary.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Medical_Mental_Health_Transfer_Summary.zip",
       "model": {
         "id": "Medical_Mental_Health_Transfer_Summary",
         "label": "Medical/Mental Health Transfer Summary",
@@ -620,7 +620,7 @@
       "id": "Notice_of_Parole_Hearing-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Notice_of_Parole_Hearing-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Notice_of_Parole_Hearing",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Notice_of_Parole_Hearing.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Notice_of_Parole_Hearing.zip",
       "model": {
         "id": "Notice_of_Parole_Hearing",
         "label": "Notice of Parole Hearing",
@@ -669,7 +669,7 @@
       "id": "Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427).zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Notice_of_Priority_Re-examination_of_Driver_Form_(DS427).zip",
       "model": {
         "id": "Notice_of_Priority_Re-examination_of_Driver_Form_(DS427)",
         "label": "Notice of Priority Re-examination of Driver Form (DS427)",
@@ -718,7 +718,7 @@
       "id": "Notice_of_Scheduled_Release_to_Parole_(CDC863)-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Notice_of_Scheduled_Release_to_Parole_(CDC863)-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Notice_of_Scheduled_Release_to_Parole_(CDC863)",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Notice_of_Scheduled_Release_to_Parole_(CDC863).zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Notice_of_Scheduled_Release_to_Parole_(CDC863).zip",
       "model": {
         "id": "Notice_of_Scheduled_Release_to_Parole_(CDC863)",
         "label": "Notice of Scheduled Release to Parole (CDC863)",
@@ -767,7 +767,7 @@
       "id": "Police_Report-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Police_Report-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Police_Report",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Police_Report.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Police_Report.zip",
       "model": {
         "id": "Police_Report",
         "label": "Police Report",
@@ -816,7 +816,7 @@
       "id": "Report_of_Controlled_Substances_Examination-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Report_of_Controlled_Substances_Examination-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Report_of_Controlled_Substances_Examination",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Report_of_Controlled_Substances_Examination.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Report_of_Controlled_Substances_Examination.zip",
       "model": {
         "id": "Report_of_Controlled_Substances_Examination",
         "label": "Report of Controlled Substances Examination",
@@ -865,7 +865,7 @@
       "id": "Subpoena-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Subpoena-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Subpoena",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Subpoena.zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Subpoena.zip",
       "model": {
         "id": "Subpoena",
         "label": "Subpoena",
@@ -914,7 +914,7 @@
       "id": "Youth_Authority_Referral_Document_(YA_1.411)-1.0",
       "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Youth_Authority_Referral_Document_(YA_1.411)-1.0.json",
       "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Youth_Authority_Referral_Document_(YA_1.411)",
-      "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Youth_Authority_Referral_Document_(YA_1.411).zip",
+      "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Youth_Authority_Referral_Document_(YA_1.411).zip",
       "model": {
         "id": "Youth_Authority_Referral_Document_(YA_1.411)",
         "label": "Youth Authority Referral Document (YA 1.411)",

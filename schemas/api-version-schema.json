@@ -58,7 +58,8 @@
                 "Version": null
               }
             }
-          }
+          },
+          "additionalProperties": true
         }
       },
       "additionalProperties": false
@@ -67,6 +68,11 @@
       "type": "object",
       "description": "A data type for metadata about version-related resources.",
       "properties": {
+        "id": {
+          "description": "An id for the target resource.",
+          "example": "ArrestReport-1.0",
+          "type": "string"
+        },
         "href": {
           "description": "A URI for the target resource.",
           "example": "/resource/:resourceID",

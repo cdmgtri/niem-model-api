@@ -32,7 +32,7 @@
     "id": "Individualized_Education_Program_(IEP)-1.0",
     "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/versions/Individualized_Education_Program_(IEP)-1.0.json",
     "folder": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/packages/Individualized_Education_Program_(IEP)",
-    "zip": "https://github.com/cdmgtri/niem-model-api/tree/dev/api/zips/Individualized_Education_Program_(IEP).zip",
+    "zip": "https://github.com/cdmgtri/niem-model-api/raw/dev/api/zips/Individualized_Education_Program_(IEP).zip",
     "model": {
       "id": "Individualized_Education_Program_(IEP)",
       "label": "Individualized Education Program (IEP)",

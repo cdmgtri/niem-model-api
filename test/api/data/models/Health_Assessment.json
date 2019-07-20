@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/cdmgtri/niem-model-api-specification/dev/schemas/deref/api-model-schema.json",
+  "data": {
+    "name": "Health Assessment",
+    "summary": "The Health Assessment IEPD was developed for the California Department of Justice - Data Exchange Project.",
+    "description": "A Health Assessment is sent from the probation department to the youth authority when the court has sentenced a subject to the youth authority and there has been a health assessment conducted on the subject.  The Health Assessment contains subject personal identification information, physical assessment information, and date/time.  The Health Assessment is one of 44 IEPDs developed by the California Department of Justice - Data Exchange Project to support information exchange between state and local government organizations throughout the state of California.  It could also be adapted for use in other states.",
+    "kind": "IEPD",
+    "source": "California Department of Justice \n 4949 Broadway \n Sacramento CA 95820 \n United States \n (URL) \n ",
+    "contactInfo": "Business Services Program \n (916) 227-4566 \n DataExchange@doj.ca.gov \n "
+  },
+  "links": {
+    "id": "Health_Assessment",
+    "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Health_Assessment.json",
+    "versions": {
+      "href": "https://raw.githubusercontent.com/cdmgtri/niem-model-api/dev/api/data/models/Health_Assessment/versions.json",
+      "count": 1
+    }
+  }
+}

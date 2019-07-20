@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:s="http://niem.gov/niem/structures/2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:nc="http://niem.gov/niem/niem-core/2.0" xmlns:j="http://niem.gov/niem/domains/jxdm/4.0" xmlns:i="http://niem.gov/niem/appinfo/2.0" targetNamespace="http://niem.gov/niem/domains/jxdm/4.0" version="1">
+	<xsd:annotation>
+		<xsd:documentation>Justice</xsd:documentation>
+		<xsd:appinfo>
+			<i:ConformantIndicator>true</i:ConformantIndicator>
+		</xsd:appinfo>
+	</xsd:annotation>
+	<xsd:import namespace="http://niem.gov/niem/structures/2.0" schemaLocation="../../../structures/2.0/structures.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/appinfo/2.0" schemaLocation="../../../appinfo/2.0/appinfo.xsd"/>
+	<xsd:import namespace="http://niem.gov/niem/niem-core/2.0" schemaLocation="../../../niem-core/2.0/niem-core.xsd"/>
+	<xsd:complexType name="ChargeType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for a formal allegation that a specific person has committed a specific offense.</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="j:ChargeDescriptionText" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="j:ChargeStatute" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="CitationType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for an official summons to appear in court or pay a fine.</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/niem-core/2.0" i:name="ActivityType"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="nc:ActivityType"/>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="StatuteType">
+		<xsd:annotation>
+			<xsd:documentation>A data type for a law, rule, or ordinance within a jurisdiction.</xsd:documentation>
+			<xsd:appinfo>
+				<i:Base i:namespace="http://niem.gov/niem/structures/2.0" i:name="Object"/>
+			</xsd:appinfo>
+		</xsd:annotation>
+		<xsd:complexContent>
+			<xsd:extension base="s:ComplexObjectType">
+				<xsd:sequence>
+					<xsd:element ref="j:StatuteCodeIdentification" minOccurs="0" maxOccurs="unbounded"/>
+					<xsd:element ref="j:StatuteCodeSectionIdentification" minOccurs="0" maxOccurs="unbounded"/>
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:element name="Charge" type="j:ChargeType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>Details about a formal allegation that a specific person has committed a specific offense.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ChargeDescriptionText" type="nc:TextType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>A plain language description of a charge.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ChargeStatute" type="j:StatuteType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>A unique identifier of a law, rule, or ordinance within a jurisdiction that a person is accused of violating.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Citation" type="j:CitationType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>Details about an official summons to appear in court or pay a fine given to a subject from a peace official due to a subjects violation or infraction of a law.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CourtOrderSignatureMethodText" type="nc:TextType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>A method used to obtain a signature on a court order.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StatuteCodeIdentification" type="nc:IdentificationType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>An identifier of a set of laws for a particular jurisdiction.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="StatuteCodeSectionIdentification" type="nc:IdentificationType" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>An identifier of a section or category within a code book.</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+</xsd:schema>

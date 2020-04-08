@@ -18,17 +18,17 @@
   "dependencies": {
     "adm-zip": "^0.4.14",
     "ajv-cli": "^3.1.0",
-    "fs-extra": "^7.0.1",
-    "globby": "^8.0.2",
+    "fs-extra": "^9.0.0",
+    "globby": "^11.0.0",
     "niem-model-api-specification": "github:cdmgtri/niem-model-api-specification",
     "niem-package-utils-js": "github:cdmgtri/niem-package-utils-js",
     "shx": "^0.3.2",
-    "trash": "^4.3.0"
+    "trash": "^6.1.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.11",
-    "cross-env": "^5.2.1",
-    "jest": "^24.9.0"
+    "cross-env": "^7.0.2",
+    "jest": "^25.3.0"
   },
   "jest": {
     "globals": {
